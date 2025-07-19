@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+
+  <title>Lyon Technologies: Leading Provider of Medical Instrumentation and IT Solutions</title>
+
+  <link rel="icon" href="https://res.cloudinary.com/dq0gbgsdy/image/upload/c_limit,w_48,h_48/uploads/AjrEJ6ft0.png">
+
+  <meta name="description"
+    content="Discover Lyon Technologies, a pioneer in the medical instrumentation and IT solutions industry. Explore our innovative products and services on our homepage.">
+
+  <meta name="keywords" content="">
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="stylesheet" href="https://s3.us-east-2.amazonaws.com/cdn.sitesgpt.com/styles/ckeditor-v2.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <script src="https://elfsight.com/embed-sdk.js"></script>
+
+
+
+  <style>
+    .text-brand-primary {
+      color: #f0d276;
+    }
+
+    .bg-brand-primary {
+      background-color: #f0d276;
+    }
+
+
+    .text-brand-secondary {
+      color: #ad8438;
+    }
+
+    .bg-brand-secondary {
+      background-color: #ad8438;
+    }
+
+
+    .text-brand-accent {
+      color: #141410;
+    }
+
+    .bg-brand-accent {
+      background-color: #141410;
+    }
+  </style>
+
+</head>
+
+<body>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
+  <style>
+    .no-plan-header {
+      background-color: #01233ee6;
+      padding: 10px 1.5rem;
+      display: flex;
+      color: white;
+      font-size: 1.5rem;
+      font-weight: bold;
+      font-family: 'Arial', sans-serif;
+      justify-content: space-between;
+      /*background: linear-gradient(45deg, #023f, #60af);*/
+      /*background: linear-gradient(45deg, #023e, #206f);*/
+      background: linear-gradient(45deg, #023, #206);
+      position: sticky;
+      top: 0;
+      z-index: 60;
+      height: 80px;
+    }
+
+    .no-plan-header a {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      font-family: 'Inter', sans-serif;
+    }
+
+    .no-plan-header a div {
+      padding-right: 20px;
+    }
+
+    .no-plan-header-right-menu {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 1rem;
+    }
+
+    .no-plan-header-right-menu span {
+      padding-left: 20px;
+    }
+
+    .no-plan-header-right-menu a {
+      text-decoration: underline;
+      /*color: #07d;*/
+      color: #5AC8FA;
+      font-family: 'Arial', sans-serif;
+    }
+
+    .no-plan-header-right-menu a:hover {
+      /*color: #5AC8FA;*/
+      /*color: #4de;*/
+      color: #5ef;
+    }
+
+    .no-plan-header-right-menu-item {
+      display: flex;
+      gap: 1rem;
+      /*align-items: center;*/
+    }
+
+    @media (max-width: 768px) {
+      .no-plan-header-right-menu a {
+        font-size: .8rem;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .no-plan-header {
+        display: block;
+        height: 130px;
+      }
+
+      .no-plan-header-right-menu span,
+      .no-plan-header-right-menu a {
+        padding-left: 0;
+        padding-top: 10px;
+        font-size: 1rem;
+      }
+
+      .no-plan-header-right-menu {
+        display: block;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .no-plan-header {
+        height: 170px;
+      }
+    }
+  </style>
+  <script>
+    // Not used, but if header heights underlapping the banner is common, we can use this.
+    const NoPLanHeader = {
+      set: function () {
+        const _this = this;
+        let classFound = false;
+        const headers = document.querySelectorAll("header");
+        headers.forEach(header => {
+          const hClass = header.getAttribute('class');
+          if (hClass.includes('sticky')) classFound = true;
+          header.classList.remove('sticky');
+          header.classList.remove('top-0');
+        });
+        // DomContentLoaded did not work due to delayed vue template loading
+        // so we use a timeout
+        if (!classFound) {
+          setTimeout(() => {
+            _this.set();
+          }, 500);
+        }
+      }
+    }
+  </script>
+  <a href="#main-content"
+    class="fixed top-2 left-2 z-50 sr-only focus:not-sr-only focus:fixed focus:ring-2 focus:ring-inset">
+    <span class="inline-block text-sm p-2 text-neutral-950 bg-white rounded-md">Skip to Main Content</span>
+  </a>
+
+  <div id="loading" class="relative z-0">
+    <header class="relative bg-gray-900 sticky top-0"><a id="basic-header-0"></a>
+      <nav role="navigation" class="flex items-center justify-between p-6 lg:px-8"
+        aria-label="Global">
+        <div class="flex grow"><a href="/" class="-m-1.5 p-1.5 flex items-center gap-3 w-full"><img
+              src="https://res.cloudinary.com/dq0gbgsdy/image/upload/c_limit,w_216,h_216/uploads/AjrEJ6ft0.png"
+              class="w-auto max-h-[72px]" alt="">
+            <h1 class="text-gray-100 font-primary font-semibold">Lyon Technologies</h1>
+          </a></div>
+        <div class="flex order-last ml-12 lg:hidden"><button type="button"
+            class="text-gray-100 -m-2.5 inline-flex items-center justify-center rounded-md p-2.5"><span
+              class="sr-only">Open main menu</span> <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+              stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5">
+              </path>
+            </svg></button></div>
+        <div class="hidden lg:flex lg:gap-x-12"><a href="#basic-content-image-0" target="_self"
+            class="text-gray-100 font-secondary text-sm font-semibold leading-6">About Us</a><a
+            href="#three-column-images-0" target="_self"
+            class="text-gray-100 font-secondary text-sm font-semibold leading-6">Our Services</a><a
+            href="#basic-contact-form-0" target="_self"
+            class="text-gray-100 font-secondary text-sm font-semibold leading-6">Contact Us</a></div>
+      </nav>
+    </header>
+    <main id="main-content">
+      <div class="relative" site="[object Object]"
+        style="background-color: rgb(0, 0, 0); mask-size: cover; mask-repeat: no-repeat;"><a
+          id="basic-hero-banner-0"></a>
+        <div class="relative isolate overflow-hidden pt-14"><img
+            srcset="           https://res.cloudinary.com/dq0gbgsdy/image/upload/c_limit,w_576,h_576/v1749508561/stock/pexels/8442105.jpg 576w,           https://res.cloudinary.com/dq0gbgsdy/image/upload/c_limit,w_768,h_768/v1749508561/stock/pexels/8442105.jpg 768w,           https://res.cloudinary.com/dq0gbgsdy/image/upload/c_limit,w_992,h_992/v1749508561/stock/pexels/8442105.jpg 992w,           https://res.cloudinary.com/dq0gbgsdy/image/upload/c_limit,w_1200,h_1200/v1749508561/stock/pexels/8442105.jpg 1200w,           https://res.cloudinary.com/dq0gbgsdy/image/upload/c_limit,w_1920,h_1080/v1749508561/stock/pexels/8442105.jpg         "
+            sizes="           (max-width: 576px) 576px,           (max-width: 768px) 768px,           (max-width: 992px) 992px,           (max-width: 1200px) 1200px,           1400px         "
+            src="https://res.cloudinary.com/dq0gbgsdy/image/upload/c_limit,w_1920,h_1080/v1749508561/stock/pexels/8442105.jpg"
+            class="absolute inset-0 -z-10 h-full w-full object-cover">
+          <div
+            class="absolute z-0 top-0 left-0 h-full w-full bg-[#000000] lg:w-3/4 lg:bg-transparent from-[#000000] from-50% to-transparent lg:bg-gradient-to-r"
+            style="opacity: 0.3;"></div>
+          <div>
+            <div class="sm:py-48 lg:max-w-7xl relative mx-auto max-w-2xl z-10 py-32 px-8 lg:px-16">
+              <div class="lg:w-2/3 xl:w-1/2 lg:mr-auto"><!---->
+                <div class="text-left">
+                  <h2 class="text-4xl font-primary font-bold tracking-tight text-white sm:text-6xl">Welcome to Lyon
+                    Technologies</h2>
+                  <div class="text-gray-100 font-secondary mt-6 leading-8 lg:text-lg">Discover Lyon Technologies, your
+                    trusted partner for medical instrumentation and IT solutions.</div>
+                  <div class="justify-start mt-10 flex items-center gap-x-6"><a href="#basic-contact-form-0"
+                      class="rounded-md px-3.5 py-2.5 text-sm font-secondary font-semibold shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
+                      style="background-color: rgb(0, 0, 0); color: rgb(255, 255, 255);">Contact Us</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!---->
+      </div>
+      <div class="relative" site="[object Object]" style="mask-size: cover; mask-repeat: no-repeat;"><a
+          id="basic-content-image-0"></a>
+        <div class="bg-gray-100">
+          <div
+            class="flex flex-col gap-16 mx-auto px-6 py-16 sm:py-24 lg:flex-row lg:gap-28 lg:px-8 lg:w-full lg:max-w-7xl">
+            <div class="lg:w-4/6 max-w-xl mx-auto lg:max-w-none flex flex-col justify-center">
+              <h2 class="text-gray-900 text-3xl font-primary font-bold tracking-tight sm:text-4xl mb-8">Innovative
+                Solutions</h2>
+              <div class="text-gray-700 font-secondary text-base leading-7">Welcome to Lyon Technologies, your trusted
+                partner in the medical instrumentation and IT solutions industry. We are dedicated to providing
+                cutting-edge technology and services that enhance healthcare delivery and management. Our innovative
+                solutions are designed to meet the unique needs of healthcare providers, ensuring efficiency, accuracy,
+                and reliability in patient care. With a strong commitment to quality and customer satisfaction, we
+                strive to exceed expectations and set new standards in the medical technology field. Explore our site to
+                learn more about our offerings and how we can assist you in achieving your healthcare goals.</div>
+            </div>
+            <div class="relative lg:w-2/6 order-first lg:pb-8">
+              <picture>
+                <source
+                  srcset="https://img.b2bpic.net/premium-photo/robot-surgeon-robotic-equipment-manipulators-minimally-invasive-surgical-innovation-with-three-dimensional-overview-technology-future-medicine-surgeon-3d-render-3d-illustration_99433-3907.jpg"
+                  media="(min-width: 1024px)"> <img class="lg:sticky lg:top-0 mx-auto lg:w-full rounded-xl shadow-xl"
+                  src="https://img.b2bpic.net/premium-photo/robot-surgeon-robotic-equipment-manipulators-minimally-invasive-surgical-innovation-with-three-dimensional-overview-technology-future-medicine-surgeon-3d-render-3d-illustration_99433-3907.jpg">
+              </picture>
+            </div>
+          </div>
+        </div> <!---->
+      </div>
+      <div class="relative" site="[object Object]" style="mask-size: cover; mask-repeat: no-repeat;"><a
+          id="three-column-images-0"></a>
+        <div class="bg-white">
+          <div class="mx-auto max-w-7xl px-6 lg:px-8 py-16 sm:py-24">
+            <div class="mx-auto max-w-2xl text-center">
+              <h2 class="text-gray-900 font-primary text-3xl font-bold tracking-tight sm:text-4xl">Our Services</h2>
+              <div class="text-gray-700 font-secondary mt-2 leading-8">At Lyon Technologies, we offer top-tier services
+                in the Medical instrumentation and IT solutions industry, ensuring quality and efficiency.</div>
+            </div>
+            <div class="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-8 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+              <article class="flex flex-col items-start p-6 rounded-2xl border-2" data-sgpt-block="mbpnrw7jld9w3biuqd"
+                style="border-color: rgb(255, 255, 255);">
+                <div>
+                  <div class="relative w-full"><img
+                      src="https://res.cloudinary.com/dq0gbgsdy/image/upload/c_fill,g_auto,w_672,h_672/assets/6_lMNCk7NUf.jpg"
+                      class="aspect-[16/9] w-full rounded-2xl object-cover sm:aspect-[2/1] lg:aspect-[3/2]">
+                    <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
+                  </div>
+                  <div class="max-w-xl">
+                    <div class="group mt-8 relative">
+                      <h3 class="text-gray-900 font-primary mt-3 text-lg font-semibold leading-6">
+                        <div>Medical Instrumentation</div>
+                      </h3>
+                      <div class="text-gray-700 font-secondary mt-5 leading-6">Our Medical Instrumentation service
+                        ensures precise and reliable results, enhancing patient care and medical procedures.</div>
+                    </div>
+                  </div> <!---->
+                </div>
+              </article>
+              <article class="flex flex-col items-start p-6 rounded-2xl border-2" data-sgpt-block="mbpnrw7jh369sgopdbw"
+                style="border-color: rgb(255, 255, 255);">
+                <div>
+                  <div class="relative w-full"><img
+                      src="https://img.b2bpic.net/premium-photo/high-angle-view-computer-office_1048944-12683466.jpg"
+                      class="aspect-[16/9] w-full rounded-2xl object-cover sm:aspect-[2/1] lg:aspect-[3/2]">
+                    <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
+                  </div>
+                  <div class="max-w-xl">
+                    <div class="group mt-8 relative">
+                      <h3 class="text-gray-900 font-primary mt-3 text-lg font-semibold leading-6">
+                        <div>IT Solutions</div>
+                      </h3>
+                      <div class="text-gray-700 font-secondary mt-5 leading-6">Our IT Solutions service provides robust
+                        and secure systems, optimizing operations in the medical field.</div>
+                    </div>
+                  </div> <!---->
+                </div>
+              </article>
+              <article class="flex flex-col items-start p-6 rounded-2xl border-2" data-sgpt-block="mbpnrw7jyghf7itnl0k"
+                style="border-color: rgb(255, 255, 255);">
+                <div>
+                  <div class="relative w-full"><img
+                      src="https://img.b2bpic.net/premium-photo/group-doctors-working-together-taking-notes-analysing-x-ray-top-view-copy-space-sitting-desk-with-stethoscope-digital-device-all-around-having-medical-conference_482257-916.jpg"
+                      class="aspect-[16/9] w-full rounded-2xl object-cover sm:aspect-[2/1] lg:aspect-[3/2]">
+                    <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
+                  </div>
+                  <div class="max-w-xl">
+                    <div class="group mt-8 relative">
+                      <h3 class="text-gray-900 font-primary mt-3 text-lg font-semibold leading-6">
+                        <div>Software Development</div>
+                      </h3>
+                      <div class="text-gray-700 font-secondary mt-5 leading-6">Our Software Development service creates
+                        tailored solutions, improving efficiency and productivity in healthcare.</div>
+                    </div>
+                  </div> <!---->
+                </div>
+              </article>
+            </div>
+          </div>
+        </div> <!---->
+      </div>
+      <div class="relative" site="[object Object]"><a id="basic-content-well-0"></a>
+        <div class="relative isolate overflow-hidden bg-gray-900" style="mask-size: cover; mask-repeat: no-repeat;">
+          <div class="px-6 sm:px-6 py-16 sm:py-24 lg:px-8">
+            <div class="text-center mx-auto max-w-2xl">
+              <h2 class="text-gray-100 text-3xl font-primary font-bold tracking-tight sm:text-4xl">Reach Out to Us Today
+                for Expert Solutions</h2>
+              <div class="text-gray-300 mx-auto font-secondary mt-6 max-w-xl leading-8">Need help with medical
+                instrumentation or IT solutions? Don't hesitate to contact Lyon Technologies. We're here to assist you.
+              </div> <!---->
+            </div>
+          </div>
+        </div> <!---->
+      </div>
+      <div class="relative" site="[object Object]" style="mask-size: cover; mask-repeat: no-repeat;"><a
+          id="basic-testimonials-0"></a>
+        <div class="bg-white">
+          <div class="mx-auto max-w-7xl px-6 lg:px-8 py-16 sm:py-24">
+            <div class="mx-auto max-w-xl text-center">
+              <h2 class="font-secondary text-lg font-semibold leading-8 tracking-tight"
+                style="color: rgb(240, 210, 118);">Testimonials</h2>
+              <p class="text-gray-900 font-primary mt-2 text-3xl font-bold tracking-tight sm:text-4xl" role="heading">
+                Voices of Satisfied Customers</p>
+            </div>
+            <div class="mx-auto mt-8 max-w-2xl sm:mt-10 lg:mx-0 lg:max-w-none">
+              <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+                <div class="pt-8 sm:inline-block sm:w-full" data-sgpt-block="mbpns0wberxb42sivzo">
+                  <figure class="bg-gray-50 rounded-2xl p-8 text-sm leading-6">
+                    <blockquote class="text-gray-900 font-secondary">
+                      <div>Lyon Tech revolutionized our medical IT needs!</div>
+                    </blockquote>
+                    <figcaption class="mt-6 flex items-center gap-x-4"><img class="h-10 w-10 rounded-full"
+                        src="https://res.cloudinary.com/dq0gbgsdy/image/upload/c_fill,g_auto,w_160,h_160/assets/sz0gN9lM_vz.jpg">
+                      <div>
+                        <div class="text-gray-900 font-secondary font-semibold">Kathleen R.</div>
+                      </div>
+                    </figcaption>
+                  </figure>
+                </div>
+                <div class="pt-8 sm:inline-block sm:w-full" data-sgpt-block="mbpns0wb5mt5xpl3eqj">
+                  <figure class="bg-gray-50 rounded-2xl p-8 text-sm leading-6">
+                    <blockquote class="text-gray-900 font-secondary">
+                      <div>Their medical instruments are top-notch!</div>
+                    </blockquote>
+                    <figcaption class="mt-6 flex items-center gap-x-4"><img class="h-10 w-10 rounded-full"
+                        src="https://res.cloudinary.com/dq0gbgsdy/image/upload/c_fill,g_auto,w_160,h_160/assets/IAdcrrh56g4o.jpg">
+                      <div>
+                        <div class="text-gray-900 font-secondary font-semibold">Jo K.</div>
+                      </div>
+                    </figcaption>
+                  </figure>
+                </div>
+                <div class="pt-8 sm:inline-block sm:w-full" data-sgpt-block="mbpns0wbo3cyvt16uno">
+                  <figure class="bg-gray-50 rounded-2xl p-8 text-sm leading-6">
+                    <blockquote class="text-gray-900 font-secondary">
+                      <div>Lyon Tech's solutions are game-changers!</div>
+                    </blockquote>
+                    <figcaption class="mt-6 flex items-center gap-x-4"><img class="h-10 w-10 rounded-full"
+                        src="https://res.cloudinary.com/dq0gbgsdy/image/upload/c_fill,g_auto,w_160,h_160/assets/RP82A-8i8Ih4.jpg">
+                      <div>
+                        <div class="text-gray-900 font-secondary font-semibold">Roland C.</div>
+                      </div>
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!---->
+      </div>
+      <div class="relative" site="[object Object]" style="mask-size: cover; mask-repeat: no-repeat;"><a
+          id="quote-floating-image-0"></a>
+        <div class="bg-white">
+          <div class="py-16 sm:py-24">
+            <div class="relative lg:z-10 bg-gray-900">
+              <div class="from-gray-800 absolute top-0 right-0 w-full h-full z-0 bg-gradient-to-r to-transparent"></div>
+              <div
+                class="relative z-10 lg:mx-auto lg:grid lg:max-w-7xl lg:grid-cols-3 lg:gap-8 lg:px-8 py-24 sm:py-32 lg:py-0">
+                <div class="relative lg:-my-8">
+                  <div class="mx-auto max-w-md px-6 sm:max-w-3xl lg:h-full lg:p-0">
+                    <div
+                      class="aspect-h-6 aspect-w-10 overflow-hidden rounded-xl shadow-xl sm:aspect-h-7 sm:aspect-w-16 lg:aspect-none lg:h-full">
+                      <picture>
+                        <source srcset="https://img.b2bpic.net/premium-photo/medical-equipment_926199-3905645.jpg"
+                          media="(min-width: 1024px)"> <img class="object-cover lg:h-full lg:w-full"
+                          src="https://img.b2bpic.net/premium-photo/medical-equipment_926199-3905645.jpg">
+                      </picture>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-12 lg:col-span-2 lg:m-0 lg:pl-8">
+                  <div class="mx-auto max-w-md px-6 sm:max-w-2xl lg:max-w-none lg:px-0 lg:py-20">
+                    <blockquote>
+                      <div>
+                        <div class="flex gap-5 items-center">
+                          <h2 class="text-gray-100 font-primary text-2xl font-bold tracking-tight sm:text-3xl">Our
+                            Mission</h2> <svg class="text-gray-100 h-12 w-12 opacity-25 order-first" fill="currentColor"
+                            viewBox="0 0 32 32" aria-hidden="true">
+                            <path
+                              d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z">
+                            </path>
+                          </svg>
+                        </div>
+                        <div class="text-gray-100 font-secondary mt-6 leading-8 font-lg" role="heading">At Lyon
+                          Technologies, we are committed to revolutionizing the medical industry through innovative
+                          instrumentation and IT solutions. Our mission is to enhance healthcare delivery, improve
+                          patient outcomes, and drive efficiency in medical practices. We strive to create a healthier
+                          world by leveraging technology to bridge the gap between healthcare providers and patients.
+                        </div>
+                      </div>
+                      <footer class="mt-6"><!----> <!----></footer>
+                    </blockquote>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!---->
+      </div>
+    </main>
+
+    <div class="relative"><a id="basic-contact-form-0"></a>
+      <div class="relative isolate px-6 lg:px-8 bg-gray-100" style="mask-size: cover; mask-repeat: no-repeat;">
+        <div class="py-16 sm:py-24">
+          <div class="mx-auto max-w-2xl text-center">
+            <h2 class="text-gray-900 text-3xl font-primary font-bold tracking-tight sm:text-4xl mb-8">Contact Us</h2>
+            <div class="text-gray-700 font-secondary mt-2 leading-8">Got questions? We're here to help! Reach out to
+              Lyon Technologies today.</div>
+          </div>
+          <form class="mx-auto mt-16 max-w-4xl">
+            <div class="wrapper flex flex-row flex-wrap">
+              <div class="field w-full sm:w-full px-4 py-3" data-sgpt-block="mbpnrjme6vjbw1k6uyi"><label for="Name"
+                  class="text-gray-900 block font-secondary text-sm font-semibold leading-6">Name <span
+                    class="text-red-600">*</span></label>
+                <div class="mt-2 5"><input aria-label="Name" name="Name" type="Name" required="" aria-required="true"
+                    class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6">
+                </div>
+              </div>
+              <div class="field w-full sm:w-1/2 px-4 py-3" data-sgpt-block="mbpnrjme2wdtm6puuqg"><label
+                  for="Email Address" class="text-gray-900 block font-secondary text-sm font-semibold leading-6">Email
+                  Address <span class="text-red-600">*</span></label>
+                <div class="mt-2 5"><input aria-label="Email Address" name="Email Address" type="Email Address"
+                    required="" aria-required="true"
+                    class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6">
+                </div>
+              </div>
+              <div class="field w-full sm:w-1/2 px-4 py-3" data-sgpt-block="mbpnrjmefl7f89k74l"><label
+                  for="Phone Number" class="text-gray-900 block font-secondary text-sm font-semibold leading-6">Phone
+                  Number <!----></label>
+                <div class="mt-2 5"><input aria-label="Phone Number" name="Phone Number" type="Phone Number"
+                    aria-required="false"
+                    class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6">
+                </div>
+              </div>
+              <div class="field w-full sm:w-full px-4 py-3" data-sgpt-block="mbpnrjmecaikn21hwz8"><label
+                  for="Message / Comments"
+                  class="text-gray-900 block font-secondary text-sm font-semibold leading-6">Message / Comments <span
+                    class="text-red-600">*</span></label>
+                <div class="mt-2 5"><textarea rows="8" aria-label="Message / Comments" name="Message / Comments"
+                    required="" aria-required="true"
+                    class="grow block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6">                     </textarea>
+                </div>
+              </div>
+            </div> <!---->
+            <div class="px-4 py-3"><input type="hidden" name="hidden" value=""> <button type="submit"
+                class="block w-full rounded-md px-3.5 py-2.5 text-center text-sm font-semibold shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
+                style="background-color: rgb(0, 0, 0); color: rgb(255, 255, 255);">Let's Talk</button></div>
+          </form>
+        </div>
+      </div> <!---->
+    </div>
+    <div class="relative"><a id="basic-footer-0"></a>
+      <footer class="bg-gray-900 border-t border-gray-950">
+        <div class="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8">
+          <div class="xl:grid xl:grid-cols-2 xl:gap-8">
+            <div class="space-y-8 xl:mr-8"><img class="h-[60px]"
+                src="https://res.cloudinary.com/dq0gbgsdy/image/upload/c_limit,w_180,h_180/uploads/AjrEJ6ft0.png">
+              <div class="text-gray-300 font-secondary leading-6">Lyon Technologies: Pioneering Medical IT Solutions for
+                a Healthier Future</div>
+              <div class="flex flex-wrap gap-3"><a href="#facebook" data-sgpt-block="mbpnrl4pkud8uxkll8b"
+                  class="text-gray-300 hover:text-gray-100" target="_blank"><span class="sr-only"></span> <i
+                    class="bi bi-facebook text-3xl"></i></a><a href="#instagram" data-sgpt-block="mbpnrl4pr5vkd5vldnn"
+                  class="text-gray-300 hover:text-gray-100" target="_blank"><span class="sr-only"></span> <i
+                    class="bi bi-instagram text-3xl"></i></a><a href="#twitter" data-sgpt-block="mbpnrl4pgh9laoj0blp"
+                  class="text-gray-300 hover:text-gray-100" target="_blank"><span class="sr-only"></span> <i
+                    class="bi bi-twitter text-3xl"></i></a><a href="#youtube" data-sgpt-block="mbpnrl4pbviy5ctafig"
+                  class="text-gray-300 hover:text-gray-100" target="_blank"><span class="sr-only"></span> <i
+                    class="bi bi-youtube text-3xl"></i></a><a href="#linkedin" data-sgpt-block="mbpnrl4pn0rvfx3qsmh"
+                  class="text-gray-300 hover:text-gray-100" target="_blank"><span class="sr-only"></span> <i
+                    class="bi bi-linkedin text-3xl"></i></a></div>
+            </div>
+            <div class="mt-16 grid grid-cols-2 gap-8 xl:mt-0 md:grid-cols-2">
+              <div data-sgpt-block="mbpnrl4px9uhgb2t09p">
+                <h3 class="text-gray-100 font-primary text-md font-semibold leading-6">Contact Us</h3> <!---->
+              </div>
+              <div data-sgpt-block="mbpnrl4porabbeytyzi">
+                <h3 class="text-gray-100 font-primary text-md font-semibold leading-6">Menu</h3>
+                <ul role="list" class="mt-6 space-y-4">
+                  <li><a href="#basic-content-image-0"
+                      class="text-gray-300 hover:text-gray-100 font-secondary text-md leading-6">About Us</a></li>
+                  <li><a href="#three-column-images-0"
+                      class="text-gray-300 hover:text-gray-100 font-secondary text-md leading-6">Our Services</a></li>
+                  <li><a href="#basic-contact-form-0"
+                      class="text-gray-300 hover:text-gray-100 font-secondary text-md leading-6">Contact Us</a></li>
+                  <li><!----></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="mt-16 border-t border-gray-900/10 pt-8 sm:mt-20 lg:mt-24">
+            <p class="text-gray-300 font-secondary text-xs leading-5">© Lyon Technologies. All rights reserved. <!---->
+              Powered by <a href="https://www.sitesgpt.com/" target="_blank" class="underline"
+                aria-label="Visit sitesgpt.com in new tab.">SitesGPT</a>. </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <div id="app" class="relative z-0">
+
+    <mbpnrjcw2t4oo3az3lt :index=0
+      :schema="{&quot;name&quot;:&quot;Basic Header&quot;,&quot;handle&quot;:&quot;basic-header&quot;,&quot;cacheable&quot;:false,&quot;settings&quot;:[{&quot;type&quot;:&quot;image&quot;,&quot;id&quot;:&quot;logo_override&quot;,&quot;label&quot;:&quot;Logo Override&quot;,&quot;info&quot;:&quot;Leave blank to use the default logo.&quot;},{&quot;id&quot;:&quot;logo_size&quot;,&quot;type&quot;:&quot;range&quot;,&quot;label&quot;:&quot;Logo Size&quot;,&quot;min&quot;:1,&quot;max&quot;:100,&quot;step&quot;:1,&quot;value&quot;:&quot;72&quot;,&quot;info&quot;:&quot;Logo image can be configured in Site Settings.&quot;},{&quot;id&quot;:&quot;title&quot;,&quot;type&quot;:&quot;text&quot;,&quot;label&quot;:&quot;Logo Title&quot;,&quot;value&quot;:&quot;Lyon Technologies&quot;,&quot;info&quot;:&quot;Even if it&#039;s not shown, this field will provide good SEO value.&quot;},{&quot;id&quot;:&quot;show_title&quot;,&quot;type&quot;:&quot;checkbox&quot;,&quot;label&quot;:&quot;Show Logo Title&quot;,&quot;value&quot;:true,&quot;info&quot;:&quot;If unchecked, the logo text will not be shown.&quot;},{&quot;id&quot;:&quot;sticky&quot;,&quot;type&quot;:&quot;checkbox&quot;,&quot;label&quot;:&quot;Sticky Header?&quot;,&quot;value&quot;:true},{&quot;type&quot;:&quot;header&quot;,&quot;label&quot;:&quot;Menu Settings&quot;},{&quot;id&quot;:&quot;menu&quot;,&quot;type&quot;:&quot;menu&quot;,&quot;label&quot;:&quot;Menu&quot;,&quot;value&quot;:[{&quot;id&quot;:&quot;lr9ih2u2djpe9s0f0pf&quot;,&quot;type&quot;:&quot;Static&quot;,&quot;title&quot;:&quot;About Us&quot;,&quot;link&quot;:&quot;#basic-content-image-0&quot;,&quot;new_tab&quot;:false,&quot;children&quot;:[]},{&quot;id&quot;:&quot;lr9ihpyced2nht6m0o9&quot;,&quot;type&quot;:&quot;Static&quot;,&quot;title&quot;:&quot;Our Services&quot;,&quot;link&quot;:&quot;#three-column-images-0&quot;,&quot;new_tab&quot;:false,&quot;children&quot;:[]},{&quot;id&quot;:&quot;lr9iibmdns4rhdwbtte&quot;,&quot;type&quot;:&quot;Static&quot;,&quot;title&quot;:&quot;Contact Us&quot;,&quot;link&quot;:&quot;#basic-contact-form-0&quot;,&quot;new_tab&quot;:false,&quot;children&quot;:[]},{&quot;id&quot;:&quot;lr9iig3rd6ms7q57jbp&quot;,&quot;type&quot;:&quot;Dynamic&quot;,&quot;mode&quot;:&quot;exclude&quot;,&quot;title&quot;:&quot;Dynamic Menu Item&quot;,&quot;data&quot;:[&quot;\/index&quot;],&quot;new_tab&quot;:false,&quot;children&quot;:[]}]},{&quot;id&quot;:&quot;menu_count&quot;,&quot;type&quot;:&quot;range&quot;,&quot;label&quot;:&quot;Visible Menu Items&quot;,&quot;min&quot;:0,&quot;max&quot;:10,&quot;step&quot;:1,&quot;value&quot;:&quot;4&quot;}],&quot;styles&quot;:[{&quot;type&quot;:&quot;header&quot;,&quot;label&quot;:&quot;Color Settings&quot;},{&quot;id&quot;:&quot;theme&quot;,&quot;type&quot;:&quot;radio&quot;,&quot;label&quot;:&quot;Color Theme&quot;,&quot;options&quot;:[{&quot;label&quot;:&quot;Light&quot;,&quot;value&quot;:&quot;light&quot;},{&quot;label&quot;:&quot;Medium&quot;,&quot;value&quot;:&quot;medium&quot;},{&quot;label&quot;:&quot;Dark&quot;,&quot;value&quot;:&quot;dark&quot;},{&quot;label&quot;:&quot;Brand&quot;,&quot;value&quot;:&quot;brand-colors&quot;}],&quot;value&quot;:&quot;dark&quot;}]}"
+      :site="{&quot;id&quot;:&quot;cXdVX8U1RfiVjMqhQl8q&quot;,&quot;logo&quot;:{&quot;source&quot;:&quot;cloudinary&quot;,&quot;filename&quot;:&quot;https:\/\/res.cloudinary.com\/dq0gbgsdy\/image\/upload\/uploads\/AjrEJ6ft0.png&quot;,&quot;type&quot;:&quot;image&quot;},&quot;company&quot;:&quot;Lyon Technologies&quot;,&quot;favicon&quot;:{&quot;source&quot;:&quot;cloudinary&quot;,&quot;filename&quot;:&quot;https:\/\/res.cloudinary.com\/dq0gbgsdy\/image\/upload\/c_limit,w_48,h_48\/uploads\/AjrEJ6ft0.png&quot;,&quot;type&quot;:&quot;image&quot;},&quot;industry&quot;:{&quot;id&quot;:null,&quot;name&quot;:&quot;Medical instrumentation and IT solutions&quot;},&quot;phone&quot;:null,&quot;colors&quot;:{&quot;accent&quot;:&quot;#141410&quot;,&quot;secondary&quot;:&quot;#ad8438&quot;,&quot;primary&quot;:&quot;#f0d276&quot;},&quot;address&quot;:null,&quot;gender&quot;:&quot;50&quot;,&quot;pages&quot;:[{&quot;handle&quot;:&quot;index&quot;,&quot;title&quot;:&quot;Homepage&quot;}],&quot;user_plan_id&quot;:null}"
+      style="z-index: 9">
+    </mbpnrjcw2t4oo3az3lt>
+
+    <main id="main-content">
+
+      <mbpnro1wl90lsqqljy :index=0
+        :schema="{&quot;name&quot;:&quot;Basic Hero Banner&quot;,&quot;cacheable&quot;:true,&quot;settings&quot;:[{&quot;type&quot;:&quot;media&quot;,&quot;id&quot;:&quot;media&quot;,&quot;label&quot;:&quot;Image \/ Video&quot;,&quot;media&quot;:{&quot;type&quot;:&quot;video&quot;,&quot;role&quot;:2},&quot;value&quot;:{&quot;filename&quot;:&quot;https:\/\/res.cloudinary.com\/dq0gbgsdy\/image\/upload\/v1749508561\/stock\/pexels\/8442105.jpg&quot;,&quot;type&quot;:&quot;image&quot;,&quot;source&quot;:&quot;stock&quot;}},{&quot;type&quot;:&quot;text&quot;,&quot;id&quot;:&quot;pretitle&quot;,&quot;label&quot;:&quot;Pretitle&quot;},{&quot;type&quot;:&quot;text&quot;,&quot;id&quot;:&quot;title&quot;,&quot;label&quot;:&quot;Title&quot;,&quot;prompt&quot;:&quot;Write a very short title that relates to the page title&quot;,&quot;fallback&quot;:&quot;Lorem Ipsum Dolor&quot;,&quot;value&quot;:&quot;Welcome to Lyon Technologies&quot;},{&quot;type&quot;:&quot;richtext&quot;,&quot;id&quot;:&quot;content&quot;,&quot;label&quot;:&quot;Content&quot;,&quot;prompt&quot;:&quot;Write 140 characters that relates to the page purpose&quot;,&quot;fallback&quot;:&quot;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et ma.&quot;,&quot;value&quot;:&quot;Discover Lyon Technologies, your trusted partner for medical instrumentation and IT solutions.&quot;},{&quot;type&quot;:&quot;text&quot;,&quot;id&quot;:&quot;primary_button_text&quot;,&quot;label&quot;:&quot;Button Label&quot;,&quot;value&quot;:&quot;Contact Us&quot;},{&quot;type&quot;:&quot;url&quot;,&quot;id&quot;:&quot;primary_button_link&quot;,&quot;label&quot;:&quot;Button Link&quot;,&quot;value&quot;:&quot;#basic-contact-form-0&quot;},{&quot;type&quot;:&quot;select&quot;,&quot;id&quot;:&quot;alignment&quot;,&quot;label&quot;:&quot;Content Alignment&quot;,&quot;options&quot;:[{&quot;label&quot;:&quot;Left&quot;,&quot;value&quot;:&quot;left&quot;},{&quot;label&quot;:&quot;Right&quot;,&quot;value&quot;:&quot;right&quot;},{&quot;label&quot;:&quot;Center&quot;,&quot;value&quot;:&quot;center&quot;}],&quot;value&quot;:&quot;left&quot;},{&quot;type&quot;:&quot;select&quot;,&quot;id&quot;:&quot;size&quot;,&quot;label&quot;:&quot;Banner Size&quot;,&quot;options&quot;:[{&quot;label&quot;:&quot;small&quot;,&quot;value&quot;:&quot;Small&quot;},{&quot;label&quot;:&quot;Medium&quot;,&quot;value&quot;:&quot;medium&quot;},{&quot;label&quot;:&quot;Large&quot;,&quot;value&quot;:&quot;large&quot;}],&quot;value&quot;:&quot;medium&quot;}],&quot;styles&quot;:[{&quot;type&quot;:&quot;header&quot;,&quot;label&quot;:&quot;Banner Styles&quot;},{&quot;id&quot;:&quot;overlay_color&quot;,&quot;type&quot;:&quot;color&quot;,&quot;label&quot;:&quot;Overlay Color&quot;,&quot;value&quot;:&quot;#000000&quot;},{&quot;id&quot;:&quot;overlay_opacity&quot;,&quot;type&quot;:&quot;range&quot;,&quot;label&quot;:&quot;Overlay Opacity&quot;,&quot;min&quot;:0,&quot;max&quot;:100,&quot;step&quot;:1,&quot;value&quot;:&quot;30&quot;},{&quot;type&quot;:&quot;header&quot;,&quot;label&quot;:&quot;Button Styles&quot;},{&quot;id&quot;:&quot;primary_button_background&quot;,&quot;type&quot;:&quot;color&quot;,&quot;label&quot;:&quot;Button Background&quot;,&quot;value&quot;:&quot;#000000&quot;},{&quot;id&quot;:&quot;primary_button_color&quot;,&quot;type&quot;:&quot;color&quot;,&quot;label&quot;:&quot;Button Text Color&quot;,&quot;value&quot;:&quot;#ffffff&quot;},{&quot;type&quot;:&quot;header&quot;,&quot;label&quot;:&quot;Section Dividers&quot;},{&quot;type&quot;:&quot;divider&quot;,&quot;id&quot;:&quot;divider&quot;,&quot;label&quot;:&quot;Divider&quot;}],&quot;blockSchema&quot;:[],&quot;blocks&quot;:[]}"
+        :site="{&quot;id&quot;:&quot;cXdVX8U1RfiVjMqhQl8q&quot;,&quot;logo&quot;:{&quot;source&quot;:&quot;cloudinary&quot;,&quot;filename&quot;:&quot;https:\/\/res.cloudinary.com\/dq0gbgsdy\/image\/upload\/uploads\/AjrEJ6ft0.png&quot;,&quot;type&quot;:&quot;image&quot;},&quot;company&quot;:&quot;Lyon Technologies&quot;,&quot;favicon&quot;:{&quot;source&quot;:&quot;cloudinary&quot;,&quot;filename&quot;:&quot;https:\/\/res.cloudinary.com\/dq0gbgsdy\/image\/upload\/c_limit,w_48,h_48\/uploads\/AjrEJ6ft0.png&quot;,&quot;type&quot;:&quot;image&quot;},&quot;industry&quot;:{&quot;id&quot;:null,&quot;name&quot;:&quot;Medical instrumentation and IT solutions&quot;},&quot;phone&quot;:null,&quot;colors&quot;:{&quot;accent&quot;:&quot;#141410&quot;,&quot;secondary&quot;:&quot;#ad8438&quot;,&quot;primary&quot;:&quot;#f0d276&quot;},&quot;address&quot;:null,&quot;gender&quot;:&quot;50&quot;,&quot;pages&quot;:[{&quot;handle&quot;:&quot;index&quot;,&quot;title&quot;:&quot;Homepage&quot;}],&quot;user_plan_id&quot;:null}"
+        style="z-index: 8">
+      </mbpnro1wl90lsqqljy>
+
+      <mbpnrqkiadwqpr5otf :index=0
+        :schema="{&quot;name&quot;:&quot;Basic Content w\/ Image&quot;,&quot;cacheable&quot;:true,&quot;settings&quot;:[{&quot;type&quot;:&quot;header&quot;,&quot;label&quot;:&quot;Media Settings&quot;},{&quot;type&quot;:&quot;media&quot;,&quot;id&quot;:&quot;media&quot;,&quot;label&quot;:&quot;Image \/ Video&quot;,&quot;media&quot;:{&quot;role&quot;:2,&quot;status&quot;:2},&quot;value&quot;:{&quot;filename&quot;:&quot;https:\/\/img.b2bpic.net\/premium-photo\/robot-surgeon-robotic-equipment-manipulators-minimally-invasive-surgical-innovation-with-three-dimensional-overview-technology-future-medicine-surgeon-3d-render-3d-illustration_99433-3907.jpg&quot;,&quot;type&quot;:&quot;image&quot;,&quot;schemaType&quot;:&quot;media&quot;,&quot;source&quot;:&quot;freepik&quot;,&quot;attribution&quot;:&quot;Photo by ksandrphoto on Freepik&quot;}},{&quot;type&quot;:&quot;checkbox&quot;,&quot;id&quot;:&quot;autoplay&quot;,&quot;label&quot;:&quot;Autoplay Video&quot;,&quot;value&quot;:false},{&quot;type&quot;:&quot;checkbox&quot;,&quot;id&quot;:&quot;muted&quot;,&quot;label&quot;:&quot;Mute Video&quot;,&quot;value&quot;:false},{&quot;type&quot;:&quot;checkbox&quot;,&quot;id&quot;:&quot;loop&quot;,&quot;label&quot;:&quot;Loop Video&quot;,&quot;value&quot;:false},{&quot;type&quot;:&quot;checkbox&quot;,&quot;id&quot;:&quot;controls&quot;,&quot;label&quot;:&quot;Enable Video Controls&quot;,&quot;value&quot;:true},{&quot;type&quot;:&quot;header&quot;,&quot;label&quot;:&quot;Content Settings&quot;},{&quot;type&quot;:&quot;text&quot;,&quot;id&quot;:&quot;title&quot;,&quot;label&quot;:&quot;Title&quot;,&quot;prompt&quot;:&quot;Write a 1-3 word title that relates to the page title and purpose.&quot;,&quot;fallback&quot;:&quot;Lorem Ipsum&quot;,&quot;value&quot;:&quot;Innovative Solutions&quot;},{&quot;type&quot;:&quot;richtext&quot;,&quot;id&quot;:&quot;content&quot;,&quot;label&quot;:&quot;Content&quot;,&quot;prompt&quot;:&quot;Write a 440 character paragraph that relates to the page purpose.&quot;,&quot;fallback&quot;:&quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est.&quot;,&quot;value&quot;:&quot;Welcome to Lyon Technologies, your trusted partner in the medical instrumentation and IT solutions industry. We are dedicated to providing cutting-edge technology and services that enhance healthcare delivery and management. Our innovative solutions are designed to meet the unique needs of healthcare providers, ensuring efficiency, accuracy, and reliability in patient care. With a strong commitment to quality and customer satisfaction, we strive to exceed expectations and set new standards in the medical technology field. Explore our site to learn more about our offerings and how we can assist you in achieving your healthcare goals.&quot;},{&quot;type&quot;:&quot;select&quot;,&quot;id&quot;:&quot;alignment&quot;,&quot;label&quot;:&quot;Image Alignment&quot;,&quot;options&quot;:[{&quot;label&quot;:&quot;Left&quot;,&quot;value&quot;:&quot;left&quot;},{&quot;label&quot;:&quot;Right&quot;,&quot;value&quot;:&quot;right&quot;}],&quot;value&quot;:&quot;left&quot;}],&quot;styles&quot;:[{&quot;type&quot;:&quot;header&quot;,&quot;label&quot;:&quot;Color Settings&quot;},{&quot;id&quot;:&quot;theme&quot;,&quot;type&quot;:&quot;radio&quot;,&quot;label&quot;:&quot;Color Theme&quot;,&quot;options&quot;:[{&quot;label&quot;:&quot;Light&quot;,&quot;value&quot;:&quot;light&quot;},{&quot;label&quot;:&quot;Medium&quot;,&quot;value&quot;:&quot;medium&quot;},{&quot;label&quot;:&quot;Dark&quot;,&quot;value&quot;:&quot;dark&quot;},{&quot;label&quot;:&quot;Brand&quot;,&quot;value&quot;:&quot;brand-colors&quot;}],&quot;value&quot;:&quot;medium&quot;},{&quot;type&quot;:&quot;header&quot;,&quot;label&quot;:&quot;Section Dividers&quot;},{&quot;type&quot;:&quot;divider&quot;,&quot;id&quot;:&quot;divider&quot;,&quot;label&quot;:&quot;Divider&quot;}],&quot;blockSchema&quot;:[],&quot;blocks&quot;:[]}"
+        :site="{&quot;id&quot;:&quot;cXdVX8U1RfiVjMqhQl8q&quot;,&quot;logo&quot;:{&quot;source&quot;:&quot;cloudinary&quot;,&quot;filename&quot;:&quot;https:\/\/res.cloudinary.com\/dq0gbgsdy\/image\/upload\/uploads\/AjrEJ6ft0.png&quot;,&quot;type&quot;:&quot;image&quot;},&quot;company&quot;:&quot;Lyon Technologies&quot;,&quot;favicon&quot;:{&quot;source&quot;:&quot;cloudinary&quot;,&quot;filename&quot;:&quot;https:\/\/res.cloudinary.com\/dq0gbgsdy\/image\/upload\/c_limit,w_48,h_48\/uploads\/AjrEJ6ft0.png&quot;,&quot;type&quot;:&quot;image&quot;},&quot;industry&quot;:{&quot;id&quot;:null,&quot;name&quot;:&quot;Medical instrumentation and IT solutions&quot;},&quot;phone&quot;:null,&quot;colors&quot;:{&quot;accent&quot;:&quot;#141410&quot;,&quot;secondary&quot;:&quot;#ad8438&quot;,&quot;primary&quot;:&quot;#f0d276&quot;},&quot;address&quot;:null,&quot;gender&quot;:&quot;50&quot;,&quot;pages&quot;:[{&quot;handle&quot;:&quot;index&quot;,&quot;title&quot;:&quot;Homepage&quot;}],&quot;user_plan_id&quot;:null}"
+        style="z-index: 7">
+      </mbpnrqkiadwqpr5otf>
+
+      <mbpnrw7jbix8kr2ny3q :index=0
+        :schema="{&quot;name&quot;:&quot;3 Column w\/ Images&quot;,&quot;cacheable&quot;:true,&quot;settings&quot;:[{&quot;id&quot;:&quot;title&quot;,&quot;type&quot;:&quot;text&quot;,&quot;label&quot;:&quot;Title&quot;,&quot;value&quot;:&quot;Our Services&quot;,&quot;fallback&quot;:&quot;Lorem Ipsum&quot;},{&quot;id&quot;:&quot;content&quot;,&quot;type&quot;:&quot;richtext&quot;,&quot;label&quot;:&quot;Content&quot;,&quot;prompt&quot;:&quot;Write 1-2 sentences about Our Services in the {industry} industry&quot;,&quot;fallback&quot;:&quot;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa cum sociis natoque penatibus et magnis dis parturient montes.&quot;,&quot;value&quot;:&quot;At Lyon Technologies, we offer top-tier services in the Medical instrumentation and IT solutions industry, ensuring quality and efficiency.&quot;}],&quot;styles&quot;:[{&quot;type&quot;:&quot;header&quot;,&quot;label&quot;:&quot;Color Settings&quot;},{&quot;id&quot;:&quot;theme&quot;,&quot;type&quot;:&quot;radio&quot;,&quot;label&quot;:&quot;Color Theme&quot;,&quot;options&quot;:[{&quot;label&quot;:&quot;Light&quot;,&quot;value&quot;:&quot;light&quot;},{&quot;label&quot;:&quot;Medium&quot;,&quot;value&quot;:&quot;medium&quot;},{&quot;label&quot;:&quot;Dark&quot;,&quot;value&quot;:&quot;dark&quot;},{&quot;label&quot;:&quot;Brand&quot;,&quot;value&quot;:&quot;brand-colors&quot;}],&quot;value&quot;:&quot;light&quot;},{&quot;type&quot;:&quot;header&quot;,&quot;label&quot;:&quot;Button Styles&quot;},{&quot;id&quot;:&quot;primary_button_background&quot;,&quot;type&quot;:&quot;color&quot;,&quot;label&quot;:&quot;Button Background&quot;,&quot;value&quot;:&quot;#f0d276&quot;},{&quot;id&quot;:&quot;primary_button_color&quot;,&quot;type&quot;:&quot;color&quot;,&quot;label&quot;:&quot;Button Text Color&quot;,&quot;value&quot;:&quot;#ffffff&quot;},{&quot;type&quot;:&quot;header&quot;,&quot;label&quot;:&quot;Section Dividers&quot;},{&quot;type&quot;:&quot;divider&quot;,&quot;id&quot;:&quot;divider&quot;,&quot;label&quot;:&quot;Divider&quot;}],&quot;blockSchema&quot;:[{&quot;name&quot;:&quot;Additional Content&quot;,&quot;type&quot;:&quot;additional_content&quot;,&quot;default_count&quot;:3,&quot;settings&quot;:[{&quot;type&quot;:&quot;image&quot;,&quot;id&quot;:&quot;image&quot;,&quot;label&quot;:&quot;Image&quot;,&quot;image&quot;:{&quot;service&quot;:true}},{&quot;type&quot;:&quot;text&quot;,&quot;id&quot;:&quot;title&quot;,&quot;label&quot;:&quot;Title&quot;,&quot;prompt&quot;:&quot;{service}&quot;,&quot;fallback&quot;:&quot;Lorem Ipsum&quot;},{&quot;type&quot;:&quot;richtext&quot;,&quot;id&quot;:&quot;content&quot;,&quot;label&quot;:&quot;Content&quot;,&quot;required&quot;:true,&quot;prompt&quot;:&quot;Write ~160 characters about {service}&quot;,&quot;fallback&quot;:&quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.&quot;},{&quot;type&quot;:&quot;url&quot;,&quot;id&quot;:&quot;link&quot;,&quot;label&quot;:&quot;Link&quot;},{&quot;type&quot;:&quot;text&quot;,&quot;id&quot;:&quot;link_label&quot;,&quot;label&quot;:&quot;Link Label&quot;},{&quot;id&quot;:&quot;show_link_as_button&quot;,&quot;type&quot;:&quot;checkbox&quot;,&quot;label&quot;:&quot;Show link as button&quot;,&quot;value&quot;:false},{&quot;type&quot;:&quot;header&quot;,&quot;label&quot;:&quot;Color Settings&quot;},{&quot;id&quot;:&quot;border_color&quot;,&quot;type&quot;:&quot;color&quot;,&quot;label&quot;:&quot;Border Color&quot;,&quot;value&quot;:&quot;#ffffff&quot;}]}],&quot;blocks&quot;:[{&quot;id&quot;:&quot;mbpnrw7jld9w3biuqd&quot;,&quot;name&quot;:&quot;Additional Content&quot;,&quot;type&quot;:&quot;additional_content&quot;,&quot;settings&quot;:[{&quot;type&quot;:&quot;image&quot;,&quot;id&quot;:&quot;image&quot;,&quot;label&quot;:&quot;Image&quot;,&quot;image&quot;:{&quot;service&quot;:true},&quot;value&quot;:{&quot;filename&quot;:&quot;https:\/\/res.cloudinary.com\/dq0gbgsdy\/image\/upload\/assets\/6_lMNCk7NUf.jpg&quot;,&quot;type&quot;:&quot;image&quot;,&quot;source&quot;:&quot;cloudinary&quot;}},{&quot;type&quot;:&quot;text&quot;,&quot;id&quot;:&quot;title&quot;,&quot;label&quot;:&quot;Title&quot;,&quot;prompt&quot;:&quot;{service}&quot;,&quot;fallback&quot;:&quot;Lorem Ipsum&quot;,&quot;value&quot;:&quot;Medical Instrumentation&quot;},{&quot;type&quot;:&quot;richtext&quot;,&quot;id&quot;:&quot;content&quot;,&quot;label&quot;:&quot;Content&quot;,&quot;required&quot;:true,&quot;prompt&quot;:&quot;Write ~160 characters about {service}&quot;,&quot;fallback&quot;:&quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.&quot;,&quot;value&quot;:&quot;Our Medical Instrumentation service ensures precise and reliable results, enhancing patient care and medical procedures.&quot;},{&quot;type&quot;:&quot;url&quot;,&quot;id&quot;:&quot;link&quot;,&quot;label&quot;:&quot;Link&quot;},{&quot;type&quot;:&quot;text&quot;,&quot;id&quot;:&quot;link_label&quot;,&quot;label&quot;:&quot;Link Label&quot;},{&quot;id&quot;:&quot;show_link_as_button&quot;,&quot;type&quot;:&quot;checkbox&quot;,&quot;label&quot;:&quot;Show link as button&quot;,&quot;value&quot;:false},{&quot;type&quot;:&quot;header&quot;,&quot;label&quot;:&quot;Color Settings&quot;},{&quot;id&quot;:&quot;border_color&quot;,&quot;type&quot;:&quot;color&quot;,&quot;label&quot;:&quot;Border Color&quot;,&quot;value&quot;:&quot;#ffffff&quot;}]},{&quot;id&quot;:&quot;mbpnrw7jh369sgopdbw&quot;,&quot;name&quot;:&quot;Additional Content&quot;,&quot;type&quot;:&quot;additional_content&quot;,&quot;settings&quot;:[{&quot;type&quot;:&quot;image&quot;,&quot;id&quot;:&quot;image&quot;,&quot;label&quot;:&quot;Image&quot;,&quot;image&quot;:{&quot;service&quot;:true},&quot;value&quot;:{&quot;filename&quot;:&quot;https:\/\/img.b2bpic.net\/premium-photo\/high-angle-view-computer-office_1048944-12683466.jpg&quot;,&quot;type&quot;:&quot;image&quot;,&quot;schemaType&quot;:&quot;image&quot;,&quot;source&quot;:&quot;freepik&quot;,&quot;attribution&quot;:&quot;Photo by EyeEm on Freepik&quot;}},{&quot;type&quot;:&quot;text&quot;,&quot;id&quot;:&quot;title&quot;,&quot;label&quot;:&quot;Title&quot;,&quot;prompt&quot;:&quot;{service}&quot;,&quot;fallback&quot;:&quot;Lorem Ipsum&quot;,&quot;value&quot;:&quot;IT Solutions&quot;},{&quot;type&quot;:&quot;richtext&quot;,&quot;id&quot;:&quot;content&quot;,&quot;label&quot;:&quot;Content&quot;,&quot;required&quot;:true,&quot;prompt&quot;:&quot;Write ~160 characters about {service}&quot;,&quot;fallback&quot;:&quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.&quot;,&quot;value&quot;:&quot;Our IT Solutions service provides robust and secure systems, optimizing operations in the medical field.&quot;},{&quot;type&quot;:&quot;url&quot;,&quot;id&quot;:&quot;link&quot;,&quot;label&quot;:&quot;Link&quot;},{&quot;type&quot;:&quot;text&quot;,&quot;id&quot;:&quot;link_label&quot;,&quot;label&quot;:&quot;Link Label&quot;},{&quot;id&quot;:&quot;show_link_as_button&quot;,&quot;type&quot;:&quot;checkbox&quot;,&quot;label&quot;:&quot;Show link as button&quot;,&quot;value&quot;:false},{&quot;type&quot;:&quot;header&quot;,&quot;label&quot;:&quot;Color Settings&quot;},{&quot;id&quot;:&quot;border_color&quot;,&quot;type&quot;:&quot;color&quot;,&quot;label&quot;:&quot;Border Color&quot;,&quot;value&quot;:&quot;#ffffff&quot;}]},{&quot;id&quot;:&quot;mbpnrw7jyghf7itnl0k&quot;,&quot;name&quot;:&quot;Additional Content&quot;,&quot;type&quot;:&quot;additional_content&quot;,&quot;settings&quot;:[{&quot;type&quot;:&quot;image&quot;,&quot;id&quot;:&quot;image&quot;,&quot;label&quot;:&quot;Image&quot;,&quot;image&quot;:{&quot;service&quot;:true},&quot;value&quot;:{&quot;filename&quot;:&quot;https:\/\/img.b2bpic.net\/premium-photo\/group-doctors-working-together-taking-notes-analysing-x-ray-top-view-copy-space-sitting-desk-with-stethoscope-digital-device-all-around-having-medical-conference_482257-916.jpg&quot;,&quot;type&quot;:&quot;image&quot;,&quot;schemaType&quot;:&quot;image&quot;,&quot;source&quot;:&quot;freepik&quot;,&quot;attribution&quot;:&quot;Photo by DC Studio on Freepik&quot;}},{&quot;type&quot;:&quot;text&quot;,&quot;id&quot;:&quot;title&quot;,&quot;label&quot;:&quot;Title&quot;,&quot;prompt&quot;:&quot;{service}&quot;,&quot;fallback&quot;:&quot;Lorem Ipsum&quot;,&quot;value&quot;:&quot;Software Development&quot;},{&quot;type&quot;:&quot;richtext&quot;,&quot;id&quot;:&quot;content&quot;,&quot;label&quot;:&quot;Content&quot;,&quot;required&quot;:true,&quot;prompt&quot;:&quot;Write ~160 characters about {service}&quot;,&quot;fallback&quot;:&quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.&quot;,&quot;value&quot;:&quot;Our Software Development service creates tailored solutions, improving efficiency and productivity in healthcare.&quot;},{&quot;type&quot;:&quot;url&quot;,&quot;id&quot;:&quot;link&quot;,&quot;label&quot;:&quot;Link&quot;},{&quot;type&quot;:&quot;text&quot;,&quot;id&quot;:&quot;link_label&quot;,&quot;label&quot;:&quot;Link Label&quot;},{&quot;id&quot;:&quot;show_link_as_button&quot;,&quot;type&quot;:&quot;checkbox&quot;,&quot;label&quot;:&quot;Show link as button&quot;,&quot;value&quot;:false},{&quot;type&quot;:&quot;header&quot;,&quot;label&quot;:&quot;Color Settings&quot;},{&quot;id&quot;:&quot;border_color&quot;,&quot;type&quot;:&quot;color&quot;,&quot;label&quot;:&quot;Border Color&quot;,&quot;value&quot;:&quot;#ffffff&quot;}]}]}"
+        :site="{&quot;id&quot;:&quot;cXdVX8U1RfiVjMqhQl8q&quot;,&quot;logo&quot;:{&quot;source&quot;:&quot;cloudinary&quot;,&quot;filename&quot;:&quot;https:\/\/res.cloudinary.com\/dq0gbgsdy\/image\/upload\/uploads\/AjrEJ6ft0.png&quot;,&quot;type&quot;:&quot;image&quot;},&quot;company&quot;:&quot;Lyon Technologies&quot;,&quot;favicon&quot;:{&quot;source&quot;:&quot;cloudinary&quot;,&quot;filename&quot;:&quot;https:\/\/res.cloudinary.com\/dq0gbgsdy\/image\/upload\/c_limit,w_48,h_48\/uploads\/AjrEJ6ft0.png&quot;,&quot;type&quot;:&quot;image&quot;},&quot;industry&quot;:{&quot;id&quot;:null,&quot;name&quot;:&quot;Medical instrumentation and IT solutions&quot;},&quot;phone&quot;:null,&quot;colors&quot;:{&quot;accent&quot;:&quot;#141410&quot;,&quot;secondary&quot;:&quot;#ad8438&quot;,&quot;primary&quot;:&quot;#f0d276&quot;},&quot;address&quot;:null,&quot;gender&quot;:&quot;50&quot;,&quot;pages&quot;:[{&quot;handle&quot;:&quot;index&quot;,&quot;title&quot;:&quot;Homepage&quot;}],&quot;user_plan_id&quot;:null}"
+        style="z-index: 6">
+      </mbpnrw7jbix8kr2ny3q>
+
+      <mbpnrziag8gpachj319 :index=0
+        :schema="{&quot;name&quot;:&quot;Basic Content Well&quot;,&quot;cacheable&quot;:true,&quot;settings&quot;:[{&quot;type&quot;:&quot;text&quot;,&quot;id&quot;:&quot;title&quot;,&quot;label&quot;:&quot;Title&quot;,&quot;prompt&quot;:&quot;Write a 50 character title encouraging users to contact us&quot;,&quot;fallback&quot;:&quot;Lorem ipsum dolor sit amet&quot;,&quot;value&quot;:&quot;Reach Out to Us Today for Expert Solutions&quot;},{&quot;type&quot;:&quot;richtext&quot;,&quot;id&quot;:&quot;content&quot;,&quot;label&quot;:&quot;Content&quot;,&quot;prompt&quot;:&quot;Write 120 characters about the title&quot;,&quot;fallback&quot;:&quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&quot;,&quot;value&quot;:&quot;Need help with medical instrumentation or IT solutions? Don&#039;t hesitate to contact Lyon Technologies. We&#039;re here to assist you.&quot;},{&quot;type&quot;:&quot;text&quot;,&quot;id&quot;:&quot;primary_button_text&quot;,&quot;label&quot;:&quot;Button Label&quot;,&quot;value&quot;:&quot;&quot;},{&quot;type&quot;:&quot;url&quot;,&quot;id&quot;:&quot;primary_button_link&quot;,&quot;label&quot;:&quot;Button Link&quot;,&quot;value&quot;:&quot;&quot;},{&quot;type&quot;:&quot;text&quot;,&quot;id&quot;:&quot;secondary_button_text&quot;,&quot;label&quot;:&quot;Text Link Label&quot;},{&quot;type&quot;:&quot;url&quot;,&quot;id&quot;:&quot;secondary_button_link&quot;,&quot;label&quot;:&quot;Text Link URL&quot;},{&quot;type&quot;:&quot;select&quot;,&quot;id&quot;:&quot;alignment&quot;,&quot;label&quot;:&quot;Content Alignment&quot;,&quot;options&quot;:[{&quot;label&quot;:&quot;Left&quot;,&quot;value&quot;:&quot;left&quot;},{&quot;label&quot;:&quot;Right&quot;,&quot;value&quot;:&quot;right&quot;},{&quot;label&quot;:&quot;Center&quot;,&quot;value&quot;:&quot;center&quot;}],&quot;value&quot;:&quot;center&quot;}],&quot;styles&quot;:[{&quot;type&quot;:&quot;header&quot;,&quot;label&quot;:&quot;Color Settings&quot;},{&quot;id&quot;:&quot;theme&quot;,&quot;type&quot;:&quot;radio&quot;,&quot;label&quot;:&quot;Color Theme&quot;,&quot;options&quot;:[{&quot;label&quot;:&quot;Light&quot;,&quot;value&quot;:&quot;light&quot;},{&quot;label&quot;:&quot;Medium&quot;,&quot;value&quot;:&quot;medium&quot;},{&quot;label&quot;:&quot;Dark&quot;,&quot;value&quot;:&quot;dark&quot;},{&quot;label&quot;:&quot;Brand&quot;,&quot;value&quot;:&quot;brand-colors&quot;}],&quot;value&quot;:&quot;dark&quot;},{&quot;id&quot;:&quot;primary_button_background&quot;,&quot;type&quot;:&quot;color&quot;,&quot;label&quot;:&quot;Button Background&quot;,&quot;value&quot;:&quot;#f0d276&quot;},{&quot;id&quot;:&quot;primary_button_color&quot;,&quot;type&quot;:&quot;color&quot;,&quot;label&quot;:&quot;Button Text Color&quot;,&quot;value&quot;:&quot;#ffffff&quot;},{&quot;id&quot;:&quot;secondary_button_color&quot;,&quot;type&quot;:&quot;color&quot;,&quot;label&quot;:&quot;Text Link Color&quot;,&quot;value&quot;:&quot;#ffffff&quot;},{&quot;type&quot;:&quot;header&quot;,&quot;label&quot;:&quot;Section Dividers&quot;},{&quot;type&quot;:&quot;divider&quot;,&quot;id&quot;:&quot;divider&quot;,&quot;label&quot;:&quot;Divider&quot;}],&quot;blockSchema&quot;:[],&quot;blocks&quot;:[]}"
+        :site="{&quot;id&quot;:&quot;cXdVX8U1RfiVjMqhQl8q&quot;,&quot;logo&quot;:{&quot;source&quot;:&quot;cloudinary&quot;,&quot;filename&quot;:&quot;https:\/\/res.cloudinary.com\/dq0gbgsdy\/image\/upload\/uploads\/AjrEJ6ft0.png&quot;,&quot;type&quot;:&quot;image&quot;},&quot;company&quot;:&quot;Lyon Technologies&quot;,&quot;favicon&quot;:{&quot;source&quot;:&quot;cloudinary&quot;,&quot;filename&quot;:&quot;https:\/\/res.cloudinary.com\/dq0gbgsdy\/image\/upload\/c_limit,w_48,h_48\/uploads\/AjrEJ6ft0.png&quot;,&quot;type&quot;:&quot;image&quot;},&quot;industry&quot;:{&quot;id&quot;:null,&quot;name&quot;:&quot;Medical instrumentation and IT solutions&quot;},&quot;phone&quot;:null,&quot;colors&quot;:{&quot;accent&quot;:&quot;#141410&quot;,&quot;secondary&quot;:&quot;#ad8438&quot;,&quot;primary&quot;:&quot;#f0d276&quot;},&quot;address&quot;:null,&quot;gender&quot;:&quot;50&quot;,&quot;pages&quot;:[{&quot;handle&quot;:&quot;index&quot;,&quot;title&quot;:&quot;Homepage&quot;}],&quot;user_plan_id&quot;:null}"
+        style="z-index: 5">
+      </mbpnrziag8gpachj319>
+
+      <mbpns0wawruoaqgjc5f :index=0
+        :schema="{&quot;name&quot;:&quot;Basic Testimonials&quot;,&quot;cacheable&quot;:true,&quot;max_blocks&quot;:18,&quot;settings&quot;:[{&quot;id&quot;:&quot;pretitle&quot;,&quot;type&quot;:&quot;text&quot;,&quot;label&quot;:&quot;Pretitle&quot;,&quot;value&quot;:&quot;Testimonials&quot;,&quot;fallback&quot;:&quot;Lorem Ipsum&quot;},{&quot;id&quot;:&quot;title&quot;,&quot;type&quot;:&quot;text&quot;,&quot;label&quot;:&quot;Title&quot;,&quot;prompt&quot;:&quot;Write a 30-50 character title for my websites testimonial section&quot;,&quot;fallback&quot;:&quot;Lorem ipsum dolor sit amet, consectetuer adipiscing.&quot;,&quot;value&quot;:&quot;Voices of Satisfied Customers&quot;}],&quot;styles&quot;:[{&quot;type&quot;:&quot;header&quot;,&quot;label&quot;:&quot;Color Settings&quot;},{&quot;id&quot;:&quot;pretitle_color&quot;,&quot;type&quot;:&quot;color&quot;,&quot;label&quot;:&quot;Pretitle Color&quot;,&quot;value&quot;:&quot;#f0d276&quot;},{&quot;id&quot;:&quot;theme&quot;,&quot;type&quot;:&quot;radio&quot;,&quot;label&quot;:&quot;Color Theme&quot;,&quot;options&quot;:[{&quot;label&quot;:&quot;Light&quot;,&quot;value&quot;:&quot;light&quot;},{&quot;label&quot;:&quot;Medium&quot;,&quot;value&quot;:&quot;medium&quot;},{&quot;label&quot;:&quot;Dark&quot;,&quot;value&quot;:&quot;dark&quot;},{&quot;label&quot;:&quot;Brand&quot;,&quot;value&quot;:&quot;brand-colors&quot;}],&quot;value&quot;:&quot;light&quot;},{&quot;type&quot;:&quot;header&quot;,&quot;label&quot;:&quot;Section Dividers&quot;},{&quot;type&quot;:&quot;divider&quot;,&quot;id&quot;:&quot;divider&quot;,&quot;label&quot;:&quot;Divider&quot;}],&quot;blockSchema&quot;:[{&quot;name&quot;:&quot;Testimonial&quot;,&quot;type&quot;:&quot;testimonial&quot;,&quot;default_count&quot;:3,&quot;settings&quot;:[{&quot;id&quot;:&quot;content&quot;,&quot;type&quot;:&quot;richtext&quot;,&quot;label&quot;:&quot;Content&quot;,&quot;prompt&quot;:&quot;Write a 100 character review for my {industry} company&quot;,&quot;fallback&quot;:&quot;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor aenean me.&quot;},{&quot;id&quot;:&quot;title&quot;,&quot;type&quot;:&quot;text&quot;,&quot;label&quot;:&quot;Name&quot;},{&quot;type&quot;:&quot;image&quot;,&quot;id&quot;:&quot;image&quot;,&quot;label&quot;:&quot;Image&quot;,&quot;image&quot;:{&quot;role&quot;:3}}]}],&quot;blocks&quot;:[{&quot;id&quot;:&quot;mbpns0wberxb42sivzo&quot;,&quot;name&quot;:&quot;Testimonial&quot;,&quot;type&quot;:&quot;testimonial&quot;,&quot;settings&quot;:[{&quot;id&quot;:&quot;content&quot;,&quot;type&quot;:&quot;richtext&quot;,&quot;label&quot;:&quot;Content&quot;,&quot;prompt&quot;:&quot;Write a 100 character review for my {industry} company&quot;,&quot;fallback&quot;:&quot;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor aenean me.&quot;,&quot;value&quot;:&quot;Lyon Tech revolutionized our medical IT needs!&quot;},{&quot;id&quot;:&quot;title&quot;,&quot;type&quot;:&quot;text&quot;,&quot;label&quot;:&quot;Name&quot;},{&quot;type&quot;:&quot;image&quot;,&quot;id&quot;:&quot;image&quot;,&quot;label&quot;:&quot;Image&quot;,&quot;image&quot;:{&quot;role&quot;:3},&quot;value&quot;:{&quot;filename&quot;:&quot;https:\/\/res.cloudinary.com\/dq0gbgsdy\/image\/upload\/assets\/sz0gN9lM_vz.jpg&quot;,&quot;type&quot;:&quot;image&quot;,&quot;schemaType&quot;:&quot;image&quot;,&quot;source&quot;:&quot;cloudinary&quot;,&quot;meta&quot;:&quot;Kathleen R.&quot;}}]},{&quot;id&quot;:&quot;mbpns0wb5mt5xpl3eqj&quot;,&quot;name&quot;:&quot;Testimonial&quot;,&quot;type&quot;:&quot;testimonial&quot;,&quot;settings&quot;:[{&quot;id&quot;:&quot;content&quot;,&quot;type&quot;:&quot;richtext&quot;,&quot;label&quot;:&quot;Content&quot;,&quot;prompt&quot;:&quot;Write a 100 character review for my {industry} company&quot;,&quot;fallback&quot;:&quot;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor aenean me.&quot;,&quot;value&quot;:&quot;Their medical instruments are top-notch!&quot;},{&quot;id&quot;:&quot;title&quot;,&quot;type&quot;:&quot;text&quot;,&quot;label&quot;:&quot;Name&quot;},{&quot;type&quot;:&quot;image&quot;,&quot;id&quot;:&quot;image&quot;,&quot;label&quot;:&quot;Image&quot;,&quot;image&quot;:{&quot;role&quot;:3},&quot;value&quot;:{&quot;filename&quot;:&quot;https:\/\/res.cloudinary.com\/dq0gbgsdy\/image\/upload\/assets\/IAdcrrh56g4o.jpg&quot;,&quot;type&quot;:&quot;image&quot;,&quot;schemaType&quot;:&quot;image&quot;,&quot;source&quot;:&quot;cloudinary&quot;,&quot;meta&quot;:&quot;Jo K.&quot;}}]},{&quot;id&quot;:&quot;mbpns0wbo3cyvt16uno&quot;,&quot;name&quot;:&quot;Testimonial&quot;,&quot;type&quot;:&quot;testimonial&quot;,&quot;settings&quot;:[{&quot;id&quot;:&quot;content&quot;,&quot;type&quot;:&quot;richtext&quot;,&quot;label&quot;:&quot;Content&quot;,&quot;prompt&quot;:&quot;Write a 100 character review for my {industry} company&quot;,&quot;fallback&quot;:&quot;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor aenean me.&quot;,&quot;value&quot;:&quot;Lyon Tech&#039;s solutions are game-changers!&quot;},{&quot;id&quot;:&quot;title&quot;,&quot;type&quot;:&quot;text&quot;,&quot;label&quot;:&quot;Name&quot;},{&quot;type&quot;:&quot;image&quot;,&quot;id&quot;:&quot;image&quot;,&quot;label&quot;:&quot;Image&quot;,&quot;image&quot;:{&quot;role&quot;:3},&quot;value&quot;:{&quot;filename&quot;:&quot;https:\/\/res.cloudinary.com\/dq0gbgsdy\/image\/upload\/assets\/RP82A-8i8Ih4.jpg&quot;,&quot;type&quot;:&quot;image&quot;,&quot;schemaType&quot;:&quot;image&quot;,&quot;source&quot;:&quot;cloudinary&quot;,&quot;meta&quot;:&quot;Roland C.&quot;}}]}]}"
+        :site="{&quot;id&quot;:&quot;cXdVX8U1RfiVjMqhQl8q&quot;,&quot;logo&quot;:{&quot;source&quot;:&quot;cloudinary&quot;,&quot;filename&quot;:&quot;https:\/\/res.cloudinary.com\/dq0gbgsdy\/image\/upload\/uploads\/AjrEJ6ft0.png&quot;,&quot;type&quot;:&quot;image&quot;},&quot;company&quot;:&quot;Lyon Technologies&quot;,&quot;favicon&quot;:{&quot;source&quot;:&quot;cloudinary&quot;,&quot;filename&quot;:&quot;https:\/\/res.cloudinary.com\/dq0gbgsdy\/image\/upload\/c_limit,w_48,h_48\/uploads\/AjrEJ6ft0.png&quot;,&quot;type&quot;:&quot;image&quot;},&quot;industry&quot;:{&quot;id&quot;:null,&quot;name&quot;:&quot;Medical instrumentation and IT solutions&quot;},&quot;phone&quot;:null,&quot;colors&quot;:{&quot;accent&quot;:&quot;#141410&quot;,&quot;secondary&quot;:&quot;#ad8438&quot;,&quot;primary&quot;:&quot;#f0d276&quot;},&quot;address&quot;:null,&quot;gender&quot;:&quot;50&quot;,&quot;pages&quot;:[{&quot;handle&quot;:&quot;index&quot;,&quot;title&quot;:&quot;Homepage&quot;}],&quot;user_plan_id&quot;:null}"
+        style="z-index: 4">
+      </mbpns0wawruoaqgjc5f>
+
+      <mbpns2jli8gmip6yx5g :index=0
+        :schema="{&quot;name&quot;:&quot;Quote w\/ Floating Image&quot;,&quot;cacheable&quot;:true,&quot;settings&quot;:[{&quot;type&quot;:&quot;header&quot;,&quot;label&quot;:&quot;Media Settings&quot;},{&quot;type&quot;:&quot;media&quot;,&quot;id&quot;:&quot;media&quot;,&quot;label&quot;:&quot;Image \/ Video&quot;,&quot;media&quot;:{&quot;role&quot;:2},&quot;value&quot;:{&quot;filename&quot;:&quot;https:\/\/img.b2bpic.net\/premium-photo\/medical-equipment_926199-3905645.jpg&quot;,&quot;type&quot;:&quot;image&quot;,&quot;schemaType&quot;:&quot;media&quot;,&quot;source&quot;:&quot;freepik&quot;,&quot;attribution&quot;:&quot;Photo by Flowo on Freepik&quot;}},{&quot;type&quot;:&quot;checkbox&quot;,&quot;id&quot;:&quot;autoplay&quot;,&quot;label&quot;:&quot;Autoplay Video&quot;,&quot;value&quot;:false},{&quot;type&quot;:&quot;checkbox&quot;,&quot;id&quot;:&quot;muted&quot;,&quot;label&quot;:&quot;Mute Video&quot;,&quot;value&quot;:false},{&quot;type&quot;:&quot;checkbox&quot;,&quot;id&quot;:&quot;loop&quot;,&quot;label&quot;:&quot;Loop Video&quot;,&quot;value&quot;:false},{&quot;type&quot;:&quot;checkbox&quot;,&quot;id&quot;:&quot;controls&quot;,&quot;label&quot;:&quot;Enable Video Controls&quot;,&quot;value&quot;:true},{&quot;type&quot;:&quot;header&quot;,&quot;label&quot;:&quot;Content Settings&quot;},{&quot;id&quot;:&quot;title&quot;,&quot;type&quot;:&quot;text&quot;,&quot;label&quot;:&quot;Title&quot;,&quot;value&quot;:&quot;Our Mission&quot;,&quot;fallback&quot;:&quot;Lorem Ipsum&quot;},{&quot;id&quot;:&quot;content&quot;,&quot;type&quot;:&quot;richtext&quot;,&quot;label&quot;:&quot;Content&quot;,&quot;prompt&quot;:&quot;Write a mission statement thats ~380 characters long.&quot;,&quot;fallback&quot;:&quot;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus donec quam felis.&quot;,&quot;value&quot;:&quot;At Lyon Technologies, we are committed to revolutionizing the medical industry through innovative instrumentation and IT solutions. Our mission is to enhance healthcare delivery, improve patient outcomes, and drive efficiency in medical practices. We strive to create a healthier world by leveraging technology to bridge the gap between healthcare providers and patients.&quot;},{&quot;id&quot;:&quot;name&quot;,&quot;type&quot;:&quot;text&quot;,&quot;label&quot;:&quot;Name&quot;,&quot;fallback&quot;:&quot;Lorem Ipsum&quot;},{&quot;id&quot;:&quot;subtitle&quot;,&quot;type&quot;:&quot;text&quot;,&quot;label&quot;:&quot;Subtitle&quot;,&quot;fallback&quot;:&quot;Dolor Sit Amet&quot;},{&quot;id&quot;:&quot;show_icon&quot;,&quot;type&quot;:&quot;radio&quot;,&quot;label&quot;:&quot;Quote Icon Visibility&quot;,&quot;options&quot;:[{&quot;label&quot;:&quot;Show&quot;,&quot;value&quot;:&quot;show&quot;},{&quot;label&quot;:&quot;Hide&quot;,&quot;value&quot;:&quot;hide&quot;}],&quot;value&quot;:&quot;show&quot;}],&quot;styles&quot;:[{&quot;type&quot;:&quot;header&quot;,&quot;label&quot;:&quot;Color Settings&quot;},{&quot;id&quot;:&quot;theme&quot;,&quot;type&quot;:&quot;radio&quot;,&quot;label&quot;:&quot;Color Theme&quot;,&quot;options&quot;:[{&quot;label&quot;:&quot;Light&quot;,&quot;value&quot;:&quot;light&quot;},{&quot;label&quot;:&quot;Medium&quot;,&quot;value&quot;:&quot;medium&quot;},{&quot;label&quot;:&quot;Dark&quot;,&quot;value&quot;:&quot;dark&quot;},{&quot;label&quot;:&quot;Brand&quot;,&quot;value&quot;:&quot;brand-colors&quot;}],&quot;value&quot;:&quot;dark&quot;},{&quot;id&quot;:&quot;subtitle_color&quot;,&quot;type&quot;:&quot;color&quot;,&quot;label&quot;:&quot;Subtitle Color&quot;,&quot;value&quot;:&quot;#f0d276&quot;},{&quot;type&quot;:&quot;header&quot;,&quot;label&quot;:&quot;Section Dividers&quot;},{&quot;type&quot;:&quot;divider&quot;,&quot;id&quot;:&quot;divider&quot;,&quot;label&quot;:&quot;Divider&quot;}],&quot;blockSchema&quot;:[],&quot;blocks&quot;:[]}"
+        :site="{&quot;id&quot;:&quot;cXdVX8U1RfiVjMqhQl8q&quot;,&quot;logo&quot;:{&quot;source&quot;:&quot;cloudinary&quot;,&quot;filename&quot;:&quot;https:\/\/res.cloudinary.com\/dq0gbgsdy\/image\/upload\/uploads\/AjrEJ6ft0.png&quot;,&quot;type&quot;:&quot;image&quot;},&quot;company&quot;:&quot;Lyon Technologies&quot;,&quot;favicon&quot;:{&quot;source&quot;:&quot;cloudinary&quot;,&quot;filename&quot;:&quot;https:\/\/res.cloudinary.com\/dq0gbgsdy\/image\/upload\/c_limit,w_48,h_48\/uploads\/AjrEJ6ft0.png&quot;,&quot;type&quot;:&quot;image&quot;},&quot;industry&quot;:{&quot;id&quot;:null,&quot;name&quot;:&quot;Medical instrumentation and IT solutions&quot;},&quot;phone&quot;:null,&quot;colors&quot;:{&quot;accent&quot;:&quot;#141410&quot;,&quot;secondary&quot;:&quot;#ad8438&quot;,&quot;primary&quot;:&quot;#f0d276&quot;},&quot;address&quot;:null,&quot;gender&quot;:&quot;50&quot;,&quot;pages&quot;:[{&quot;handle&quot;:&quot;index&quot;,&quot;title&quot;:&quot;Homepage&quot;}],&quot;user_plan_id&quot;:null}"
+        style="z-index: 3">
+      </mbpns2jli8gmip6yx5g>
+    </main>
+
+
+    <mbpnrjmda2gg3b1b74n :index=0
+      :schema="{&quot;name&quot;:&quot;Basic Contact Form&quot;,&quot;cacheable&quot;:true,&quot;settings&quot;:[{&quot;type&quot;:&quot;text&quot;,&quot;id&quot;:&quot;title&quot;,&quot;label&quot;:&quot;Title&quot;,&quot;value&quot;:&quot;Contact Us&quot;,&quot;fallback&quot;:&quot;Lorem Ipsum&quot;},{&quot;type&quot;:&quot;richtext&quot;,&quot;id&quot;:&quot;content&quot;,&quot;label&quot;:&quot;Content&quot;,&quot;prompt&quot;:&quot;Write 60 characters encouraging users to contact us.&quot;,&quot;fallback&quot;:&quot;Lorem ipsum dolor sit amet, consectetuer adipiscing elit.&quot;,&quot;value&quot;:&quot;Got questions? We&#039;re here to help! Reach out to Lyon Technologies today.&quot;},{&quot;type&quot;:&quot;text&quot;,&quot;id&quot;:&quot;button_text&quot;,&quot;label&quot;:&quot;Button Label&quot;,&quot;value&quot;:&quot;Let&#039;s Talk&quot;},{&quot;type&quot;:&quot;distribution&quot;,&quot;id&quot;:&quot;distribution&quot;,&quot;label&quot;:&quot;Email List&quot;,&quot;value&quot;:&quot;Default&quot;,&quot;info&quot;:&quot;Successful form submissions will be emailed to the contacts in this list. Manage lists at Settings -&gt; Site Settings -&gt; Distribution Lists&quot;}],&quot;styles&quot;:[{&quot;type&quot;:&quot;header&quot;,&quot;value&quot;:&quot;Color Settings&quot;},{&quot;id&quot;:&quot;theme&quot;,&quot;type&quot;:&quot;radio&quot;,&quot;label&quot;:&quot;Color Theme&quot;,&quot;options&quot;:[{&quot;label&quot;:&quot;Light&quot;,&quot;value&quot;:&quot;light&quot;},{&quot;label&quot;:&quot;Medium&quot;,&quot;value&quot;:&quot;medium&quot;},{&quot;label&quot;:&quot;Dark&quot;,&quot;value&quot;:&quot;dark&quot;},{&quot;label&quot;:&quot;Brand&quot;,&quot;value&quot;:&quot;brand-colors&quot;}],&quot;value&quot;:&quot;medium&quot;},{&quot;id&quot;:&quot;button_background&quot;,&quot;type&quot;:&quot;color&quot;,&quot;label&quot;:&quot;Button Color&quot;,&quot;value&quot;:&quot;#000000&quot;},{&quot;id&quot;:&quot;button_text_color&quot;,&quot;type&quot;:&quot;color&quot;,&quot;label&quot;:&quot;Button Text Color&quot;,&quot;value&quot;:&quot;#FFFFFF&quot;},{&quot;type&quot;:&quot;header&quot;,&quot;label&quot;:&quot;Section Dividers&quot;},{&quot;type&quot;:&quot;divider&quot;,&quot;id&quot;:&quot;divider&quot;,&quot;label&quot;:&quot;Divider&quot;}],&quot;blockSchema&quot;:[{&quot;name&quot;:&quot;Form Field&quot;,&quot;type&quot;:&quot;form_field&quot;,&quot;default_count&quot;:1,&quot;settings&quot;:[{&quot;id&quot;:&quot;label&quot;,&quot;type&quot;:&quot;select&quot;,&quot;label&quot;:&quot;Label&quot;,&quot;options&quot;:[{&quot;label&quot;:&quot;Address&quot;,&quot;value&quot;:&quot;Address&quot;},{&quot;label&quot;:&quot;Budget \/ Project Size&quot;,&quot;value&quot;:&quot;Budget \/ Project Size&quot;},{&quot;label&quot;:&quot;City&quot;,&quot;value&quot;:&quot;City&quot;},{&quot;label&quot;:&quot;Company Name&quot;,&quot;value&quot;:&quot;Company Name&quot;},{&quot;label&quot;:&quot;Country&quot;,&quot;value&quot;:&quot;Country&quot;},{&quot;label&quot;:&quot;Deadline&quot;,&quot;value&quot;:&quot;Deadline&quot;},{&quot;label&quot;:&quot;Email Address&quot;,&quot;value&quot;:&quot;Email Address&quot;},{&quot;label&quot;:&quot;How did you hear about us?&quot;,&quot;value&quot;:&quot;How did you hear about us?&quot;},{&quot;label&quot;:&quot;Job Title \/ Position&quot;,&quot;value&quot;:&quot;Job Title \/ Position&quot;},{&quot;label&quot;:&quot;Message \/ Comments&quot;,&quot;value&quot;:&quot;Message \/ Comments&quot;},{&quot;label&quot;:&quot;Name&quot;,&quot;value&quot;:&quot;Name&quot;},{&quot;label&quot;:&quot;Opt-in (Text Messages)&quot;,&quot;value&quot;:&quot;I consent to receive automated marketing text messages at the phone number provided. Reply STOP to unsubscribe.&quot;},{&quot;label&quot;:&quot;Phone Number&quot;,&quot;value&quot;:&quot;Phone Number&quot;},{&quot;label&quot;:&quot;State \/ Province \/ Region&quot;,&quot;value&quot;:&quot;State \/ Province \/ Region&quot;},{&quot;label&quot;:&quot;Subject&quot;,&quot;value&quot;:&quot;Subject&quot;},{&quot;label&quot;:&quot;Zip \/ Postal Code&quot;,&quot;value&quot;:&quot;Zip \/ Postal Code&quot;}],&quot;value&quot;:&quot;Message \/ Comments&quot;,&quot;required&quot;:true},{&quot;id&quot;:&quot;type&quot;,&quot;type&quot;:&quot;select&quot;,&quot;label&quot;:&quot;Field Type&quot;,&quot;options&quot;:[{&quot;label&quot;:&quot;Checkbox&quot;,&quot;value&quot;:&quot;checkbox&quot;},{&quot;label&quot;:&quot;Email&quot;,&quot;value&quot;:&quot;email&quot;},{&quot;label&quot;:&quot;Phone Number&quot;,&quot;value&quot;:&quot;tel&quot;},{&quot;label&quot;:&quot;Text Input&quot;,&quot;value&quot;:&quot;text&quot;},{&quot;label&quot;:&quot;Textarea&quot;,&quot;value&quot;:&quot;textarea&quot;}],&quot;value&quot;:&quot;textarea&quot;,&quot;required&quot;:true},{&quot;id&quot;:&quot;width&quot;,&quot;type&quot;:&quot;select&quot;,&quot;label&quot;:&quot;Field Width&quot;,&quot;options&quot;:[{&quot;label&quot;:&quot;1\/3&quot;,&quot;value&quot;:&quot;1\/3&quot;},{&quot;label&quot;:&quot;1\/2&quot;,&quot;value&quot;:&quot;1\/2&quot;},{&quot;label&quot;:&quot;2\/3&quot;,&quot;value&quot;:&quot;2\/3&quot;},{&quot;label&quot;:&quot;Full&quot;,&quot;value&quot;:&quot;full&quot;}],&quot;value&quot;:&quot;full&quot;},{&quot;id&quot;:&quot;required&quot;,&quot;type&quot;:&quot;checkbox&quot;,&quot;label&quot;:&quot;Required?&quot;,&quot;info&quot;:&quot;Form submission will be disabled unless this field is filled out.&quot;,&quot;value&quot;:true}]}],&quot;blocks&quot;:[{&quot;id&quot;:&quot;mbpnrjme6vjbw1k6uyi&quot;,&quot;name&quot;:&quot;Form Field&quot;,&quot;type&quot;:&quot;form_field&quot;,&quot;settings&quot;:[{&quot;id&quot;:&quot;label&quot;,&quot;type&quot;:&quot;select&quot;,&quot;label&quot;:&quot;Label&quot;,&quot;options&quot;:[{&quot;label&quot;:&quot;Address&quot;,&quot;value&quot;:&quot;Address&quot;},{&quot;label&quot;:&quot;Budget \/ Project Size&quot;,&quot;value&quot;:&quot;Budget \/ Project Size&quot;},{&quot;label&quot;:&quot;City&quot;,&quot;value&quot;:&quot;City&quot;},{&quot;label&quot;:&quot;Company Name&quot;,&quot;value&quot;:&quot;Company Name&quot;},{&quot;label&quot;:&quot;Country&quot;,&quot;value&quot;:&quot;Country&quot;},{&quot;label&quot;:&quot;Deadline&quot;,&quot;value&quot;:&quot;Deadline&quot;},{&quot;label&quot;:&quot;Email Address&quot;,&quot;value&quot;:&quot;Email Address&quot;},{&quot;label&quot;:&quot;How did you hear about us?&quot;,&quot;value&quot;:&quot;How did you hear about us?&quot;},{&quot;label&quot;:&quot;Job Title \/ Position&quot;,&quot;value&quot;:&quot;Job Title \/ Position&quot;},{&quot;label&quot;:&quot;Message \/ Comments&quot;,&quot;value&quot;:&quot;Message \/ Comments&quot;},{&quot;label&quot;:&quot;Name&quot;,&quot;value&quot;:&quot;Name&quot;},{&quot;label&quot;:&quot;Opt-in (Text Messages)&quot;,&quot;value&quot;:&quot;I consent to receive automated marketing text messages at the phone number provided. Reply STOP to unsubscribe.&quot;},{&quot;label&quot;:&quot;Phone Number&quot;,&quot;value&quot;:&quot;Phone Number&quot;},{&quot;label&quot;:&quot;State \/ Province \/ Region&quot;,&quot;value&quot;:&quot;State \/ Province \/ Region&quot;},{&quot;label&quot;:&quot;Subject&quot;,&quot;value&quot;:&quot;Subject&quot;},{&quot;label&quot;:&quot;Zip \/ Postal Code&quot;,&quot;value&quot;:&quot;Zip \/ Postal Code&quot;}],&quot;value&quot;:&quot;Name&quot;,&quot;required&quot;:true},{&quot;id&quot;:&quot;type&quot;,&quot;type&quot;:&quot;select&quot;,&quot;label&quot;:&quot;Field Type&quot;,&quot;options&quot;:[{&quot;label&quot;:&quot;Checkbox&quot;,&quot;value&quot;:&quot;checkbox&quot;},{&quot;label&quot;:&quot;Email&quot;,&quot;value&quot;:&quot;email&quot;},{&quot;label&quot;:&quot;Phone Number&quot;,&quot;value&quot;:&quot;tel&quot;},{&quot;label&quot;:&quot;Text Input&quot;,&quot;value&quot;:&quot;text&quot;},{&quot;label&quot;:&quot;Textarea&quot;,&quot;value&quot;:&quot;textarea&quot;}],&quot;value&quot;:&quot;text&quot;,&quot;required&quot;:true},{&quot;id&quot;:&quot;width&quot;,&quot;type&quot;:&quot;select&quot;,&quot;label&quot;:&quot;Field Width&quot;,&quot;options&quot;:[{&quot;label&quot;:&quot;1\/3&quot;,&quot;value&quot;:&quot;1\/3&quot;},{&quot;label&quot;:&quot;1\/2&quot;,&quot;value&quot;:&quot;1\/2&quot;},{&quot;label&quot;:&quot;2\/3&quot;,&quot;value&quot;:&quot;2\/3&quot;},{&quot;label&quot;:&quot;Full&quot;,&quot;value&quot;:&quot;full&quot;}],&quot;value&quot;:&quot;full&quot;},{&quot;id&quot;:&quot;required&quot;,&quot;type&quot;:&quot;checkbox&quot;,&quot;label&quot;:&quot;Required?&quot;,&quot;info&quot;:&quot;Form submission will be disabled unless this field is filled out.&quot;,&quot;value&quot;:true}]},{&quot;id&quot;:&quot;mbpnrjme2wdtm6puuqg&quot;,&quot;name&quot;:&quot;Form Field&quot;,&quot;type&quot;:&quot;form_field&quot;,&quot;settings&quot;:[{&quot;id&quot;:&quot;label&quot;,&quot;type&quot;:&quot;select&quot;,&quot;label&quot;:&quot;Label&quot;,&quot;options&quot;:[{&quot;label&quot;:&quot;Address&quot;,&quot;value&quot;:&quot;Address&quot;},{&quot;label&quot;:&quot;Budget \/ Project Size&quot;,&quot;value&quot;:&quot;Budget \/ Project Size&quot;},{&quot;label&quot;:&quot;City&quot;,&quot;value&quot;:&quot;City&quot;},{&quot;label&quot;:&quot;Company Name&quot;,&quot;value&quot;:&quot;Company Name&quot;},{&quot;label&quot;:&quot;Country&quot;,&quot;value&quot;:&quot;Country&quot;},{&quot;label&quot;:&quot;Deadline&quot;,&quot;value&quot;:&quot;Deadline&quot;},{&quot;label&quot;:&quot;Email Address&quot;,&quot;value&quot;:&quot;Email Address&quot;},{&quot;label&quot;:&quot;How did you hear about us?&quot;,&quot;value&quot;:&quot;How did you hear about us?&quot;},{&quot;label&quot;:&quot;Job Title \/ Position&quot;,&quot;value&quot;:&quot;Job Title \/ Position&quot;},{&quot;label&quot;:&quot;Message \/ Comments&quot;,&quot;value&quot;:&quot;Message \/ Comments&quot;},{&quot;label&quot;:&quot;Name&quot;,&quot;value&quot;:&quot;Name&quot;},{&quot;label&quot;:&quot;Opt-in (Text Messages)&quot;,&quot;value&quot;:&quot;I consent to receive automated marketing text messages at the phone number provided. Reply STOP to unsubscribe.&quot;},{&quot;label&quot;:&quot;Phone Number&quot;,&quot;value&quot;:&quot;Phone Number&quot;},{&quot;label&quot;:&quot;State \/ Province \/ Region&quot;,&quot;value&quot;:&quot;State \/ Province \/ Region&quot;},{&quot;label&quot;:&quot;Subject&quot;,&quot;value&quot;:&quot;Subject&quot;},{&quot;label&quot;:&quot;Zip \/ Postal Code&quot;,&quot;value&quot;:&quot;Zip \/ Postal Code&quot;}],&quot;value&quot;:&quot;Email Address&quot;,&quot;required&quot;:true},{&quot;id&quot;:&quot;type&quot;,&quot;type&quot;:&quot;select&quot;,&quot;label&quot;:&quot;Field Type&quot;,&quot;options&quot;:[{&quot;label&quot;:&quot;Checkbox&quot;,&quot;value&quot;:&quot;checkbox&quot;},{&quot;label&quot;:&quot;Email&quot;,&quot;value&quot;:&quot;email&quot;},{&quot;label&quot;:&quot;Phone Number&quot;,&quot;value&quot;:&quot;tel&quot;},{&quot;label&quot;:&quot;Text Input&quot;,&quot;value&quot;:&quot;text&quot;},{&quot;label&quot;:&quot;Textarea&quot;,&quot;value&quot;:&quot;textarea&quot;}],&quot;value&quot;:&quot;email&quot;,&quot;required&quot;:true},{&quot;id&quot;:&quot;width&quot;,&quot;type&quot;:&quot;select&quot;,&quot;label&quot;:&quot;Field Width&quot;,&quot;options&quot;:[{&quot;label&quot;:&quot;1\/3&quot;,&quot;value&quot;:&quot;1\/3&quot;},{&quot;label&quot;:&quot;1\/2&quot;,&quot;value&quot;:&quot;1\/2&quot;},{&quot;label&quot;:&quot;2\/3&quot;,&quot;value&quot;:&quot;2\/3&quot;},{&quot;label&quot;:&quot;Full&quot;,&quot;value&quot;:&quot;full&quot;}],&quot;value&quot;:&quot;1\/2&quot;},{&quot;id&quot;:&quot;required&quot;,&quot;type&quot;:&quot;checkbox&quot;,&quot;label&quot;:&quot;Required?&quot;,&quot;info&quot;:&quot;Form submission will be disabled unless this field is filled out.&quot;,&quot;value&quot;:true}]},{&quot;id&quot;:&quot;mbpnrjmefl7f89k74l&quot;,&quot;name&quot;:&quot;Form Field&quot;,&quot;type&quot;:&quot;form_field&quot;,&quot;settings&quot;:[{&quot;id&quot;:&quot;label&quot;,&quot;type&quot;:&quot;select&quot;,&quot;label&quot;:&quot;Label&quot;,&quot;options&quot;:[{&quot;label&quot;:&quot;Address&quot;,&quot;value&quot;:&quot;Address&quot;},{&quot;label&quot;:&quot;Budget \/ Project Size&quot;,&quot;value&quot;:&quot;Budget \/ Project Size&quot;},{&quot;label&quot;:&quot;City&quot;,&quot;value&quot;:&quot;City&quot;},{&quot;label&quot;:&quot;Company Name&quot;,&quot;value&quot;:&quot;Company Name&quot;},{&quot;label&quot;:&quot;Country&quot;,&quot;value&quot;:&quot;Country&quot;},{&quot;label&quot;:&quot;Deadline&quot;,&quot;value&quot;:&quot;Deadline&quot;},{&quot;label&quot;:&quot;Email Address&quot;,&quot;value&quot;:&quot;Email Address&quot;},{&quot;label&quot;:&quot;How did you hear about us?&quot;,&quot;value&quot;:&quot;How did you hear about us?&quot;},{&quot;label&quot;:&quot;Job Title \/ Position&quot;,&quot;value&quot;:&quot;Job Title \/ Position&quot;},{&quot;label&quot;:&quot;Message \/ Comments&quot;,&quot;value&quot;:&quot;Message \/ Comments&quot;},{&quot;label&quot;:&quot;Name&quot;,&quot;value&quot;:&quot;Name&quot;},{&quot;label&quot;:&quot;Opt-in (Text Messages)&quot;,&quot;value&quot;:&quot;I consent to receive automated marketing text messages at the phone number provided. Reply STOP to unsubscribe.&quot;},{&quot;label&quot;:&quot;Phone Number&quot;,&quot;value&quot;:&quot;Phone Number&quot;},{&quot;label&quot;:&quot;State \/ Province \/ Region&quot;,&quot;value&quot;:&quot;State \/ Province \/ Region&quot;},{&quot;label&quot;:&quot;Subject&quot;,&quot;value&quot;:&quot;Subject&quot;},{&quot;label&quot;:&quot;Zip \/ Postal Code&quot;,&quot;value&quot;:&quot;Zip \/ Postal Code&quot;}],&quot;value&quot;:&quot;Phone Number&quot;,&quot;required&quot;:true},{&quot;id&quot;:&quot;type&quot;,&quot;type&quot;:&quot;select&quot;,&quot;label&quot;:&quot;Field Type&quot;,&quot;options&quot;:[{&quot;label&quot;:&quot;Checkbox&quot;,&quot;value&quot;:&quot;checkbox&quot;},{&quot;label&quot;:&quot;Email&quot;,&quot;value&quot;:&quot;email&quot;},{&quot;label&quot;:&quot;Phone Number&quot;,&quot;value&quot;:&quot;tel&quot;},{&quot;label&quot;:&quot;Text Input&quot;,&quot;value&quot;:&quot;text&quot;},{&quot;label&quot;:&quot;Textarea&quot;,&quot;value&quot;:&quot;textarea&quot;}],&quot;value&quot;:&quot;tel&quot;,&quot;required&quot;:true},{&quot;id&quot;:&quot;width&quot;,&quot;type&quot;:&quot;select&quot;,&quot;label&quot;:&quot;Field Width&quot;,&quot;options&quot;:[{&quot;label&quot;:&quot;1\/3&quot;,&quot;value&quot;:&quot;1\/3&quot;},{&quot;label&quot;:&quot;1\/2&quot;,&quot;value&quot;:&quot;1\/2&quot;},{&quot;label&quot;:&quot;2\/3&quot;,&quot;value&quot;:&quot;2\/3&quot;},{&quot;label&quot;:&quot;Full&quot;,&quot;value&quot;:&quot;full&quot;}],&quot;value&quot;:&quot;1\/2&quot;},{&quot;id&quot;:&quot;required&quot;,&quot;type&quot;:&quot;checkbox&quot;,&quot;label&quot;:&quot;Required?&quot;,&quot;info&quot;:&quot;Form submission will be disabled unless this field is filled out.&quot;,&quot;value&quot;:false}]},{&quot;id&quot;:&quot;mbpnrjmecaikn21hwz8&quot;,&quot;name&quot;:&quot;Form Field&quot;,&quot;type&quot;:&quot;form_field&quot;,&quot;settings&quot;:[{&quot;id&quot;:&quot;label&quot;,&quot;type&quot;:&quot;select&quot;,&quot;label&quot;:&quot;Label&quot;,&quot;options&quot;:[{&quot;label&quot;:&quot;Address&quot;,&quot;value&quot;:&quot;Address&quot;},{&quot;label&quot;:&quot;Budget \/ Project Size&quot;,&quot;value&quot;:&quot;Budget \/ Project Size&quot;},{&quot;label&quot;:&quot;City&quot;,&quot;value&quot;:&quot;City&quot;},{&quot;label&quot;:&quot;Company Name&quot;,&quot;value&quot;:&quot;Company Name&quot;},{&quot;label&quot;:&quot;Country&quot;,&quot;value&quot;:&quot;Country&quot;},{&quot;label&quot;:&quot;Deadline&quot;,&quot;value&quot;:&quot;Deadline&quot;},{&quot;label&quot;:&quot;Email Address&quot;,&quot;value&quot;:&quot;Email Address&quot;},{&quot;label&quot;:&quot;How did you hear about us?&quot;,&quot;value&quot;:&quot;How did you hear about us?&quot;},{&quot;label&quot;:&quot;Job Title \/ Position&quot;,&quot;value&quot;:&quot;Job Title \/ Position&quot;},{&quot;label&quot;:&quot;Message \/ Comments&quot;,&quot;value&quot;:&quot;Message \/ Comments&quot;},{&quot;label&quot;:&quot;Name&quot;,&quot;value&quot;:&quot;Name&quot;},{&quot;label&quot;:&quot;Opt-in (Text Messages)&quot;,&quot;value&quot;:&quot;I consent to receive automated marketing text messages at the phone number provided. Reply STOP to unsubscribe.&quot;},{&quot;label&quot;:&quot;Phone Number&quot;,&quot;value&quot;:&quot;Phone Number&quot;},{&quot;label&quot;:&quot;State \/ Province \/ Region&quot;,&quot;value&quot;:&quot;State \/ Province \/ Region&quot;},{&quot;label&quot;:&quot;Subject&quot;,&quot;value&quot;:&quot;Subject&quot;},{&quot;label&quot;:&quot;Zip \/ Postal Code&quot;,&quot;value&quot;:&quot;Zip \/ Postal Code&quot;}],&quot;value&quot;:&quot;Message \/ Comments&quot;,&quot;required&quot;:true},{&quot;id&quot;:&quot;type&quot;,&quot;type&quot;:&quot;select&quot;,&quot;label&quot;:&quot;Field Type&quot;,&quot;options&quot;:[{&quot;label&quot;:&quot;Checkbox&quot;,&quot;value&quot;:&quot;checkbox&quot;},{&quot;label&quot;:&quot;Email&quot;,&quot;value&quot;:&quot;email&quot;},{&quot;label&quot;:&quot;Phone Number&quot;,&quot;value&quot;:&quot;tel&quot;},{&quot;label&quot;:&quot;Text Input&quot;,&quot;value&quot;:&quot;text&quot;},{&quot;label&quot;:&quot;Textarea&quot;,&quot;value&quot;:&quot;textarea&quot;}],&quot;value&quot;:&quot;textarea&quot;,&quot;required&quot;:true},{&quot;id&quot;:&quot;width&quot;,&quot;type&quot;:&quot;select&quot;,&quot;label&quot;:&quot;Field Width&quot;,&quot;options&quot;:[{&quot;label&quot;:&quot;1\/3&quot;,&quot;value&quot;:&quot;1\/3&quot;},{&quot;label&quot;:&quot;1\/2&quot;,&quot;value&quot;:&quot;1\/2&quot;},{&quot;label&quot;:&quot;2\/3&quot;,&quot;value&quot;:&quot;2\/3&quot;},{&quot;label&quot;:&quot;Full&quot;,&quot;value&quot;:&quot;full&quot;}],&quot;value&quot;:&quot;full&quot;},{&quot;id&quot;:&quot;required&quot;,&quot;type&quot;:&quot;checkbox&quot;,&quot;label&quot;:&quot;Required?&quot;,&quot;info&quot;:&quot;Form submission will be disabled unless this field is filled out.&quot;,&quot;value&quot;:true}]}]}"
+      :site="{&quot;id&quot;:&quot;cXdVX8U1RfiVjMqhQl8q&quot;,&quot;logo&quot;:{&quot;source&quot;:&quot;cloudinary&quot;,&quot;filename&quot;:&quot;https:\/\/res.cloudinary.com\/dq0gbgsdy\/image\/upload\/uploads\/AjrEJ6ft0.png&quot;,&quot;type&quot;:&quot;image&quot;},&quot;company&quot;:&quot;Lyon Technologies&quot;,&quot;favicon&quot;:{&quot;source&quot;:&quot;cloudinary&quot;,&quot;filename&quot;:&quot;https:\/\/res.cloudinary.com\/dq0gbgsdy\/image\/upload\/c_limit,w_48,h_48\/uploads\/AjrEJ6ft0.png&quot;,&quot;type&quot;:&quot;image&quot;},&quot;industry&quot;:{&quot;id&quot;:null,&quot;name&quot;:&quot;Medical instrumentation and IT solutions&quot;},&quot;phone&quot;:null,&quot;colors&quot;:{&quot;accent&quot;:&quot;#141410&quot;,&quot;secondary&quot;:&quot;#ad8438&quot;,&quot;primary&quot;:&quot;#f0d276&quot;},&quot;address&quot;:null,&quot;gender&quot;:&quot;50&quot;,&quot;pages&quot;:[{&quot;handle&quot;:&quot;index&quot;,&quot;title&quot;:&quot;Homepage&quot;}],&quot;user_plan_id&quot;:null}"
+      style="z-index: 2">
+    </mbpnrjmda2gg3b1b74n>
+
+    <mbpnrl4pzm23sh60z3r :index=0
+      :schema="{&quot;name&quot;:&quot;Basic Footer&quot;,&quot;handle&quot;:&quot;basic-footer&quot;,&quot;cacheable&quot;:true,&quot;settings&quot;:[{&quot;type&quot;:&quot;image&quot;,&quot;id&quot;:&quot;logo_override&quot;,&quot;label&quot;:&quot;Logo Override&quot;,&quot;info&quot;:&quot;Leave blank to use the default logo.&quot;},{&quot;id&quot;:&quot;logo_size&quot;,&quot;type&quot;:&quot;range&quot;,&quot;label&quot;:&quot;Logo Size&quot;,&quot;min&quot;:1,&quot;max&quot;:300,&quot;step&quot;:1,&quot;value&quot;:&quot;60&quot;,&quot;info&quot;:&quot;Logo image can be configured in Site Settings.&quot;},{&quot;id&quot;:&quot;content&quot;,&quot;type&quot;:&quot;richtext&quot;,&quot;label&quot;:&quot;Content&quot;,&quot;prompt&quot;:&quot;Write a 75 character tagline for my company&quot;,&quot;fallback&quot;:&quot;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo li.&quot;,&quot;value&quot;:&quot;Lyon Technologies: Pioneering Medical IT Solutions for a Healthier Future&quot;},{&quot;id&quot;:&quot;copyright&quot;,&quot;type&quot;:&quot;text&quot;,&quot;label&quot;:&quot;Copyright&quot;,&quot;value&quot;:&quot;\u00a9 Lyon Technologies. All rights reserved.&quot;,&quot;info&quot;:&quot;Free sites will show a \&quot;Powered by SitesGPT\&quot; message.&quot;},{&quot;type&quot;:&quot;url&quot;,&quot;id&quot;:&quot;copyright_link&quot;,&quot;label&quot;:&quot;Copyright Link&quot;},{&quot;type&quot;:&quot;text&quot;,&quot;id&quot;:&quot;copyright_link_label&quot;,&quot;label&quot;:&quot;Copyright Link Label&quot;}],&quot;styles&quot;:[{&quot;type&quot;:&quot;header&quot;,&quot;label&quot;:&quot;Color Settings&quot;},{&quot;id&quot;:&quot;theme&quot;,&quot;type&quot;:&quot;radio&quot;,&quot;label&quot;:&quot;Color Theme&quot;,&quot;options&quot;:[{&quot;label&quot;:&quot;Light&quot;,&quot;value&quot;:&quot;light&quot;},{&quot;label&quot;:&quot;Medium&quot;,&quot;value&quot;:&quot;medium&quot;},{&quot;label&quot;:&quot;Dark&quot;,&quot;value&quot;:&quot;dark&quot;},{&quot;label&quot;:&quot;Brand&quot;,&quot;value&quot;:&quot;brand-colors&quot;}],&quot;value&quot;:&quot;dark&quot;}],&quot;blockSchema&quot;:[{&quot;name&quot;:&quot;Icon&quot;,&quot;type&quot;:&quot;icon&quot;,&quot;default_count&quot;:1,&quot;settings&quot;:[{&quot;id&quot;:&quot;title&quot;,&quot;type&quot;:&quot;text&quot;,&quot;label&quot;:&quot;Title&quot;,&quot;value&quot;:&quot;LinkedIn&quot;},{&quot;id&quot;:&quot;icon&quot;,&quot;type&quot;:&quot;icon&quot;,&quot;label&quot;:&quot;Icon&quot;,&quot;value&quot;:&quot;bi-linkedin&quot;},{&quot;id&quot;:&quot;link&quot;,&quot;type&quot;:&quot;url&quot;,&quot;label&quot;:&quot;Link&quot;,&quot;value&quot;:&quot;#linkedin&quot;}]},{&quot;name&quot;:&quot;Link Group&quot;,&quot;type&quot;:&quot;link_group&quot;,&quot;default_count&quot;:1,&quot;settings&quot;:[{&quot;id&quot;:&quot;title&quot;,&quot;type&quot;:&quot;text&quot;,&quot;label&quot;:&quot;Title&quot;,&quot;value&quot;:&quot;Menu&quot;},{&quot;id&quot;:&quot;menu&quot;,&quot;type&quot;:&quot;menu&quot;,&quot;label&quot;:&quot;Menu&quot;,&quot;value&quot;:[{&quot;id&quot;:&quot;lr9ih2u2djpe9s0f0pf&quot;,&quot;type&quot;:&quot;Static&quot;,&quot;title&quot;:&quot;About Us&quot;,&quot;link&quot;:&quot;#basic-content-image-0&quot;,&quot;new_tab&quot;:false,&quot;children&quot;:[]},{&quot;id&quot;:&quot;lr9ihpyced2nht6m0o9&quot;,&quot;type&quot;:&quot;Static&quot;,&quot;title&quot;:&quot;Our Services&quot;,&quot;link&quot;:&quot;#three-column-images-0&quot;,&quot;new_tab&quot;:false,&quot;children&quot;:[]},{&quot;id&quot;:&quot;lr9iibmdns4rhdwbtte&quot;,&quot;type&quot;:&quot;Static&quot;,&quot;title&quot;:&quot;Contact Us&quot;,&quot;link&quot;:&quot;#basic-contact-form-0&quot;,&quot;new_tab&quot;:false,&quot;children&quot;:[]},{&quot;id&quot;:&quot;lr9iig3rd6ms7q57jbp&quot;,&quot;type&quot;:&quot;Dynamic&quot;,&quot;mode&quot;:&quot;exclude&quot;,&quot;title&quot;:&quot;Dynamic Menu Item&quot;,&quot;data&quot;:[&quot;\/index&quot;],&quot;new_tab&quot;:false,&quot;children&quot;:[]}]}]}],&quot;blocks&quot;:[{&quot;id&quot;:&quot;mbpnrl4pkud8uxkll8b&quot;,&quot;name&quot;:&quot;Icon&quot;,&quot;type&quot;:&quot;icon&quot;,&quot;settings&quot;:[{&quot;id&quot;:&quot;title&quot;,&quot;type&quot;:&quot;text&quot;,&quot;label&quot;:&quot;Title&quot;,&quot;value&quot;:&quot;Facebook&quot;},{&quot;id&quot;:&quot;icon&quot;,&quot;type&quot;:&quot;icon&quot;,&quot;label&quot;:&quot;Icon&quot;,&quot;value&quot;:&quot;bi-facebook&quot;},{&quot;id&quot;:&quot;link&quot;,&quot;type&quot;:&quot;url&quot;,&quot;label&quot;:&quot;Link&quot;,&quot;value&quot;:&quot;#facebook&quot;}]},{&quot;id&quot;:&quot;mbpnrl4pr5vkd5vldnn&quot;,&quot;name&quot;:&quot;Icon&quot;,&quot;type&quot;:&quot;icon&quot;,&quot;settings&quot;:[{&quot;id&quot;:&quot;title&quot;,&quot;type&quot;:&quot;text&quot;,&quot;label&quot;:&quot;Title&quot;,&quot;value&quot;:&quot;Instagram&quot;},{&quot;id&quot;:&quot;icon&quot;,&quot;type&quot;:&quot;icon&quot;,&quot;label&quot;:&quot;Icon&quot;,&quot;value&quot;:&quot;bi-instagram&quot;},{&quot;id&quot;:&quot;link&quot;,&quot;type&quot;:&quot;url&quot;,&quot;label&quot;:&quot;Link&quot;,&quot;value&quot;:&quot;#instagram&quot;}]},{&quot;id&quot;:&quot;mbpnrl4pgh9laoj0blp&quot;,&quot;name&quot;:&quot;Icon&quot;,&quot;type&quot;:&quot;icon&quot;,&quot;settings&quot;:[{&quot;id&quot;:&quot;title&quot;,&quot;type&quot;:&quot;text&quot;,&quot;label&quot;:&quot;Title&quot;,&quot;value&quot;:&quot;Twitter&quot;},{&quot;id&quot;:&quot;icon&quot;,&quot;type&quot;:&quot;icon&quot;,&quot;label&quot;:&quot;Icon&quot;,&quot;value&quot;:&quot;bi-twitter&quot;},{&quot;id&quot;:&quot;link&quot;,&quot;type&quot;:&quot;url&quot;,&quot;label&quot;:&quot;Link&quot;,&quot;value&quot;:&quot;#twitter&quot;}]},{&quot;id&quot;:&quot;mbpnrl4pbviy5ctafig&quot;,&quot;name&quot;:&quot;Icon&quot;,&quot;type&quot;:&quot;icon&quot;,&quot;settings&quot;:[{&quot;id&quot;:&quot;title&quot;,&quot;type&quot;:&quot;text&quot;,&quot;label&quot;:&quot;Title&quot;,&quot;value&quot;:&quot;Youtube&quot;},{&quot;id&quot;:&quot;icon&quot;,&quot;type&quot;:&quot;icon&quot;,&quot;label&quot;:&quot;Icon&quot;,&quot;value&quot;:&quot;bi-youtube&quot;},{&quot;id&quot;:&quot;link&quot;,&quot;type&quot;:&quot;url&quot;,&quot;label&quot;:&quot;Link&quot;,&quot;value&quot;:&quot;#youtube&quot;}]},{&quot;id&quot;:&quot;mbpnrl4pn0rvfx3qsmh&quot;,&quot;name&quot;:&quot;Icon&quot;,&quot;type&quot;:&quot;icon&quot;,&quot;settings&quot;:[{&quot;id&quot;:&quot;title&quot;,&quot;type&quot;:&quot;text&quot;,&quot;label&quot;:&quot;Title&quot;,&quot;value&quot;:&quot;LinkedIn&quot;},{&quot;id&quot;:&quot;icon&quot;,&quot;type&quot;:&quot;icon&quot;,&quot;label&quot;:&quot;Icon&quot;,&quot;value&quot;:&quot;bi-linkedin&quot;},{&quot;id&quot;:&quot;link&quot;,&quot;type&quot;:&quot;url&quot;,&quot;label&quot;:&quot;Link&quot;,&quot;value&quot;:&quot;#linkedin&quot;}]},{&quot;id&quot;:&quot;mbpnrl4px9uhgb2t09p&quot;,&quot;name&quot;:&quot;Link Group&quot;,&quot;type&quot;:&quot;link_group&quot;,&quot;settings&quot;:[{&quot;id&quot;:&quot;title&quot;,&quot;type&quot;:&quot;text&quot;,&quot;label&quot;:&quot;Title&quot;,&quot;value&quot;:&quot;Contact Us&quot;},{&quot;id&quot;:&quot;menu&quot;,&quot;type&quot;:&quot;menu&quot;,&quot;label&quot;:&quot;Menu&quot;,&quot;value&quot;:[]}]},{&quot;id&quot;:&quot;mbpnrl4porabbeytyzi&quot;,&quot;name&quot;:&quot;Link Group&quot;,&quot;type&quot;:&quot;link_group&quot;,&quot;settings&quot;:[{&quot;id&quot;:&quot;title&quot;,&quot;type&quot;:&quot;text&quot;,&quot;label&quot;:&quot;Title&quot;,&quot;value&quot;:&quot;Menu&quot;},{&quot;id&quot;:&quot;menu&quot;,&quot;type&quot;:&quot;menu&quot;,&quot;label&quot;:&quot;Menu&quot;,&quot;value&quot;:[{&quot;id&quot;:&quot;lr9ih2u2djpe9s0f0pf&quot;,&quot;type&quot;:&quot;Static&quot;,&quot;title&quot;:&quot;About Us&quot;,&quot;link&quot;:&quot;#basic-content-image-0&quot;,&quot;new_tab&quot;:false,&quot;children&quot;:[]},{&quot;id&quot;:&quot;lr9ihpyced2nht6m0o9&quot;,&quot;type&quot;:&quot;Static&quot;,&quot;title&quot;:&quot;Our Services&quot;,&quot;link&quot;:&quot;#three-column-images-0&quot;,&quot;new_tab&quot;:false,&quot;children&quot;:[]},{&quot;id&quot;:&quot;lr9iibmdns4rhdwbtte&quot;,&quot;type&quot;:&quot;Static&quot;,&quot;title&quot;:&quot;Contact Us&quot;,&quot;link&quot;:&quot;#basic-contact-form-0&quot;,&quot;new_tab&quot;:false,&quot;children&quot;:[]},{&quot;id&quot;:&quot;lr9iig3rd6ms7q57jbp&quot;,&quot;type&quot;:&quot;Dynamic&quot;,&quot;mode&quot;:&quot;exclude&quot;,&quot;title&quot;:&quot;Dynamic Menu Item&quot;,&quot;data&quot;:[&quot;\/index&quot;],&quot;new_tab&quot;:false,&quot;children&quot;:[]}]}]}]}"
+      :site="{&quot;id&quot;:&quot;cXdVX8U1RfiVjMqhQl8q&quot;,&quot;logo&quot;:{&quot;source&quot;:&quot;cloudinary&quot;,&quot;filename&quot;:&quot;https:\/\/res.cloudinary.com\/dq0gbgsdy\/image\/upload\/uploads\/AjrEJ6ft0.png&quot;,&quot;type&quot;:&quot;image&quot;},&quot;company&quot;:&quot;Lyon Technologies&quot;,&quot;favicon&quot;:{&quot;source&quot;:&quot;cloudinary&quot;,&quot;filename&quot;:&quot;https:\/\/res.cloudinary.com\/dq0gbgsdy\/image\/upload\/c_limit,w_48,h_48\/uploads\/AjrEJ6ft0.png&quot;,&quot;type&quot;:&quot;image&quot;},&quot;industry&quot;:{&quot;id&quot;:null,&quot;name&quot;:&quot;Medical instrumentation and IT solutions&quot;},&quot;phone&quot;:null,&quot;colors&quot;:{&quot;accent&quot;:&quot;#141410&quot;,&quot;secondary&quot;:&quot;#ad8438&quot;,&quot;primary&quot;:&quot;#f0d276&quot;},&quot;address&quot;:null,&quot;gender&quot;:&quot;50&quot;,&quot;pages&quot;:[{&quot;handle&quot;:&quot;index&quot;,&quot;title&quot;:&quot;Homepage&quot;}],&quot;user_plan_id&quot;:null}"
+      style="z-index: 1">
+    </mbpnrl4pzm23sh60z3r>
+  </div>
+
+  <script src="https://unpkg.com/vue@latest"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue3-sfc-loader/dist/vue3-sfc-loader.js"></script>
+  <script src="./js/helpers.js"></script>
+  <script src="./js/vue-app.js"></script>
+
+  <script>
+    const app = createApp({
+      components: {
+        mbpnrjcw2t4oo3az3lt: Vue.defineAsyncComponent(() =>
+          loadModule('https://s3.us-east-2.amazonaws.com/cdn.sitesgpt.com/sections/mbpnrjcw2t4oo3az3lt.vue', options)
+        ),
+
+        mbpnro1wl90lsqqljy: Vue.defineAsyncComponent(() =>
+          loadModule('https://s3.us-east-2.amazonaws.com/cdn.sitesgpt.com/sections/mbpnro1wl90lsqqljy.vue', options)
+        ),
+        mbpnrqkiadwqpr5otf: Vue.defineAsyncComponent(() =>
+          loadModule('https://s3.us-east-2.amazonaws.com/cdn.sitesgpt.com/sections/mbpnrqkiadwqpr5otf.vue', options)
+        ),
+        mbpnrw7jbix8kr2ny3q: Vue.defineAsyncComponent(() =>
+          loadModule('https://s3.us-east-2.amazonaws.com/cdn.sitesgpt.com/sections/mbpnrw7jbix8kr2ny3q.vue', options)
+        ),
+        mbpnrziag8gpachj319: Vue.defineAsyncComponent(() =>
+          loadModule('https://s3.us-east-2.amazonaws.com/cdn.sitesgpt.com/sections/mbpnrziag8gpachj319.vue', options)
+        ),
+        mbpns0wawruoaqgjc5f: Vue.defineAsyncComponent(() =>
+          loadModule('https://s3.us-east-2.amazonaws.com/cdn.sitesgpt.com/sections/mbpns0wawruoaqgjc5f.vue', options)
+        ),
+        mbpns2jli8gmip6yx5g: Vue.defineAsyncComponent(() =>
+          loadModule('https://s3.us-east-2.amazonaws.com/cdn.sitesgpt.com/sections/mbpns2jli8gmip6yx5g.vue', options)
+        ),
+
+        mbpnrjmda2gg3b1b74n: Vue.defineAsyncComponent(() =>
+          loadModule('https://s3.us-east-2.amazonaws.com/cdn.sitesgpt.com/sections/mbpnrjmda2gg3b1b74n.vue', options)
+        ),
+        mbpnrl4pzm23sh60z3r: Vue.defineAsyncComponent(() =>
+          loadModule('https://s3.us-east-2.amazonaws.com/cdn.sitesgpt.com/sections/mbpnrl4pzm23sh60z3r.vue', options)
+        ),
+      },
+
+      mounted() {
+        setTimeout(() => {
+          document.querySelector('#loading').remove()
+        }, 1)
+
+        setTimeout(() => {
+          const currentUrl = new URL(window.location.href);
+          const hash = currentUrl.hash;
+          if (hash) {
+            const element = document.querySelector(hash);
+            if (element) {
+              element.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start',
+                inline: 'nearest'
+              });
+            }
+          }
+        }, 1000)
+      },
+    }).mount('#app');
+  </script>
+</body>
+
+</html>
